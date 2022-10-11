@@ -61,7 +61,14 @@ state_max <- by_province %>%
 state_max %>%
   group_by(state)
 
-``` 
+```
+
+
+```{r}
+
+write.csv(by_province,"province_bar.csv")
+write.csv(state_max,"top_metal.csv")
+```
 
 
 
