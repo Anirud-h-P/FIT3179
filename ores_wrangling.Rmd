@@ -1,0 +1,69 @@
+---
+title: "parse_ores"
+author: "Anirudh"
+date: "2022-10-10"
+output: html_document
+---
+
+```{r setup}
+
+library(dplyr)
+library(tidyr)
+library(stringr)
+```
+
+```{r}
+
+ores<- read.csv("mineral-ores.csv")
+
+ores <- ores %>%
+  filter(country == "United States")
+
+ores <- ores %>%
+  filter(com_type == "M")
+
+ores <-ores %>%
+  mutate(commod1 = strsplit(as.character(commod1),",")) %>%
+  unnest(commod1)
+
+
+ores <- ores %>%
+  mutate(state = strsplit(as.character(state),",")) %>%
+  unnest(state)
+
+ores <- ores %>%
+  mutate(state = str_trim(state))
+
+ores <- ores %>%
+  mutate(commod1 = str_trim(commod1)) %>%
+  filter(commod1 != "Construction")
+
+
+
+```
+
+```{r ores_bystate}
+
+by_province <- ores %>%
+  group_by(state,commod1) %>%
+  count()
+
+
+
+
+state_max <- by_province %>%
+  group_by(state)%>%
+  filter(n == max(n))
+
+```
+
+```{r}
+state_max %>%
+  group_by(state)
+
+``` 
+
+
+
+
+
