@@ -42,6 +42,11 @@ ores <- ores %>%
 
 ```
 
+```{r}
+state_id <- read.csv("state_id.csv")
+
+```
+
 ```{r ores_bystate}
 
 by_province <- ores %>%
@@ -55,6 +60,11 @@ state_max <- by_province %>%
   group_by(state)%>%
   filter(n == max(n))
 
+state_max <- merge(state_max,state_id,by = "state")
+
+state_max <- state_max[,1:4]
+
+
 ```
 
 ```{r}
@@ -62,6 +72,7 @@ state_max %>%
   group_by(state)
 
 ```
+
 
 
 ```{r}
