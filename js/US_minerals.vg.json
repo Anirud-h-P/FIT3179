@@ -9,7 +9,10 @@
   },
   "projection": {"type": "albersUsa"},
   "mark": "geoshape",
-  "encoding": {"color": {"field": "commod1", "type": "nominal"},"tooltip":[{"field":"state","type":"nominal"},{"field":"commod1","type":"nominal"}]},
+  "encoding": {"color": {"field": "commod1", "type": "nominal"},
+  
+  "tooltip":[{"field":"state","type":"nominal"},{"field":"commod1","type":"nominal"}]},
+  
   "transform": [{"lookup": "id","from": {"data": {"url": "https://raw.githubusercontent.com/Anirud-h-P/FIT3179/main/top_metal.csv"},"key": "id","fields": ["commod1", "state"]}}]
   
   
