@@ -1,0 +1,15 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "url": "https://raw.githubusercontent.com/vega/vega/main/docs/data/us-10m.json",
+    "format": {"type": "topojson", "feature": "states"}
+  },
+  "projection": {"type": "albersUsa"},
+  "mark": "geoshape",
+  "encoding": {"color": {"field": "commod1", "type": "nominal"},"tooltip":[{"field":"state","type":"nominal"},{"field":"commod1","type":"nominal"}]},
+  "transform": [{"lookup": "id","from": {"data": {"url": "https://raw.githubusercontent.com/Anirud-h-P/FIT3179/main/top_metal.csv"},"key": "id","fields": ["commod1", "state"]}}]
+  
+  
+}

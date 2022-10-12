@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+  
+  <!-- CSS file -->
+  <link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
+
+
+</head>
+<body>
+  
+<div id="choropleth_map"></div>
+
+<script type="text/javascript">
+
+  var spec2 = "js/us_minerals.vg.json";
+  vegaEmbed('#choropleth_map', spec2).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+</script>
+
+
+
+
+
+<select id="state_select" class="form-control"
+                    onchange="singleSelectChangeValue()">
+  <option value="California">California</option>
+  <option value="Utah">Utah</option>
+  <option value="Wyoming">Wyoming</option>
+  <option value="Texas">Texas</option>
+</select>
+
+
+<button onclick="myFunction()">Generate Graph for state</button>
+
+<p id="test">
+  
+  Map of State
+  
+</p>
+
+<script>
+function myFunction() {
+  var selObj = document.getElementById("state_select");
+  var selValue = selObj.options[selObj.selectedIndex].text;
+  document.getElementById("test").innerHTML = selValue;
+  if(selValue == "California"){
+      var spec2 = "js/cali_minerals.vg.json";
+  vegaEmbed('#state_map', spec2).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+  }
+    
+  }
+
+</script>
+
+
+<div id="state_map"></div>
+
+
+
+
+
+
+
+</body>
+</html>

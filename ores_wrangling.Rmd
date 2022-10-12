@@ -79,8 +79,18 @@ state_max %>%
 
 write.csv(by_province,"province_bar.csv")
 write.csv(state_max,"top_metal.csv")
+
+write.csv(ores[,c(1,2,3,6,7,9,16)],"ores_short.csv")
 ```
 
+```{r}
+dir.create(temp <- tempfile())
+ores %>%
+  group_by(state) %>%
+  group_walk(~ write.csv(.x, paste0("state_deposits/",.y$state, ".csv")))
+list.files(temp, pattern = "csv$")
+
+```
 
 
 

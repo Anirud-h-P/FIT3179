@@ -1,0 +1,6 @@
+"","site_name","latitude","longitude","region","country","county","com_type","commod1","commod2","commod3","oper_type","dep_type","prod_size","dev_stat","ore","gangue","work_type","names","ore_ctrl","hrock_type","arock_type"
+"1","Red Point",18.33398,-64.97082,"CR","United States","","M","Copper","","","Unknown","","N","Occurrence","Pyrite","","","","","Volcanic Breccia (Agglomerate)",""
+"2","Red Point",18.33398,-64.97082,"CR","United States","","M","Gold","","","Unknown","","N","Occurrence","Pyrite","","","","","Volcanic Breccia (Agglomerate)",""
+"3","Bordeaux Mountain",18.34621,-64.7347,"CR","United States","","M","Gold","","","Unknown","","N","Occurrence","","","","","","",""
+"4","Muhlenfels Point",18.33704,-64.92165,"CR","United States","","M","Gold","","","Unknown","Vein","N","Occurrence","Gold, Pyrite","Quartz","","","","",""
+"5","Virgin Is. Aluminum St Croix Plant",17.71068,-64.77383,"CR","United States","","M","Aluminum","","","Processing Plant","","","Plant","","","","Martin Marietta St. Croix Plant","","",""

@@ -1,0 +1,7 @@
+"","site_name","latitude","longitude","region","country","county","com_type","commod1","commod2","commod3","oper_type","dep_type","prod_size","dev_stat","ore","gangue","work_type","names","ore_ctrl","hrock_type","arock_type"
+"1","West Maui",20.78386,-156.30755,"OC","United States","","M","Aluminum","","","Unknown","","N","Occurrence","Gibbsite","","","","","Basalt",""
+"2","Kaneha Reservoirs  Deposit",22.05376,-159.49981,"OC","United States","Kauai","M","Titanium","","","Unknown","","N","Occurrence","","","","","","",""
+"3","Kaneha Reservoirs  Deposit",22.05376,-159.49981,"OC","United States","Kauai","M","Metal","","","Unknown","","N","Occurrence","","","","","","",""
+"4","Hawaii Bauxite",22.05376,-159.49981,"OC","United States","Kauai","M","Aluminum","","","Unknown","","N","Occurrence","Bauxite, Gibbsite","Goethite, Halloysite, Hematite, Magnetite","","","Depth Of Weathering","Basalt","Basalt"
+"5","Hawaii Bauxite",20.97967,-156.63088,"OC","United States","Maui","M","Aluminum","","","Unknown","","N","Occurrence","Bauxite, Gibbsite","Goethite, Halloysite, Hematite, Magnetite","","","Depth Of Weathering","Andesite",""
+"6","West Maui",20.78386,-156.30755,"OC","United States","","M","Aluminum","","","Unknown","","N","Occurrence","","","","","","Trachyte",""
