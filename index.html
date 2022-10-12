@@ -15,13 +15,7 @@
   
 <div id="choropleth_map"></div>
 
-<script type="text/javascript">
 
-  var spec2 = "js/us_minerals.vg.json";
-  vegaEmbed('#choropleth_map', spec2).then(function(result) {
-    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-  }).catch(console.error);
-</script>
 
 
 
@@ -50,6 +44,13 @@
 
 <script>
 function myFunction() {
+  
+  var spec2 = "js/US_minerals.vg.json";
+  vegaEmbed('#choropleth_map', spec2).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+  
+  
   var selObj = document.getElementById("state_select");
   var selValue = selObj.options[selObj.selectedIndex].text;
   document.getElementById("test").innerHTML = selValue;
