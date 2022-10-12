@@ -29,15 +29,19 @@
 
 <select id="state_select" class="form-control"
                     onchange="singleSelectChangeValue()">
+  <option value="Alabama">Alabama</option>
   <option value="California">California</option>
-  <option value="Utah">Utah</option>
-  <option value="Wyoming">Wyoming</option>
+
   <option value="Texas">Texas</option>
 </select>
 
 
 <button onclick="myFunction()">Generate Graph for state</button>
 
+
+<p>
+  Select a state to see all deposits in the specific state
+</p>
 <p id="test">
   
   Map of State
@@ -49,12 +53,26 @@ function myFunction() {
   var selObj = document.getElementById("state_select");
   var selValue = selObj.options[selObj.selectedIndex].text;
   document.getElementById("test").innerHTML = selValue;
-  if(selValue == "California"){
+  if(selValue == "Alabama"){
+      var spec2 = "js/alab_minerals.vg.json";
+  vegaEmbed('#state_map', spec2).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+  }
+    if(selValue == "Texas"){
+      var spec2 = "js/texas_minerals.vg.json";
+  vegaEmbed('#state_map', spec2).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+  }
+  
+      if(selValue == "California"){
       var spec2 = "js/cali_minerals.vg.json";
   vegaEmbed('#state_map', spec2).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
   }
+  
     
   }
 

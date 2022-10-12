@@ -3,7 +3,7 @@
   "width": 500,
   "height": 300,
   "data": {
-    "url": "https://raw.githubusercontent.com/Anirud-h-P/FIT3179/main/state_deposits/California.csv"
+    "url": "https://raw.githubusercontent.com/Anirud-h-P/FIT3179/main/state_deposits/Alabama.csv"
   },
   "transform": [
     {"calculate": "substring(datum.zip_code, 0, 1)", "as": "digit"}
