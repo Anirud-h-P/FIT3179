@@ -8,11 +8,19 @@
     "format": {"type": "topojson", "feature": "states"}
   },
   "projection": {"type": "albersUsa"},
-  "mark": "geoshape",
-  "encoding": {"color": {"field": "commod1", "type": "nominal"}
-},
+  "mark": {"type":"geoshape"},
+  "encoding": {"color": {"field": "Metal", "type": "nominal" },
+               "tooltip":[{"field":"state","type":"nominal","title":"State"},
+                        {"field":"Metal","type":"nominal","title":"Metal"},
+                        {"field":"Number Of Deposits","type":"quantitative","title":"Number Of Deposits"}]},
+
+
   
-  "transform": [{"lookup": "id","from": {"data": {"url": "https://raw.githubusercontent.com/Anirud-h-P/FIT3179/main/top_metal.csv"},"key": "id","fields": ["commod1", "state"]}}]
+  "transform": [{"lookup": "id","from": {"data": {"url": "https://raw.githubusercontent.com/Anirud-h-P/FIT3179/main/top_metal.csv"},"key": "id","fields": ["Metal", "state","Number Of Deposits"]}},
+
+{"filter": "datum.Metal != null  "}  
+  ]
+
   
   
 }

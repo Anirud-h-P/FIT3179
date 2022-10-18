@@ -1,53 +1,53 @@
 "","state","Metal","Number Of Deposits","id"
-"1","Alabama","Iron",1110,1
-"2","Alaska","Gold",6161,2
-"3","Arizona","Copper",2348,4
-"4","Arkansas","Lead",198,5
-"5","California","Gold",22675,6
-"6","Colorado","Gold",4564,8
+"1","Alabama","Iron",1117,1
+"2","Alaska","Gold",6702,2
+"3","Arizona","Gold",3042,4
+"4","Arkansas","Zinc",223,5
+"5","California","Gold",22862,6
+"6","Colorado","Gold",5022,8
 "7","Connecticut","Iron",41,9
 "8","Delaware","Iron",9,10
 "9","District of Columbia","Iron",2,11
 "10","Florida","Titanium-Heavy Minerals",14,12
-"11","Georgia","Gold",473,13
+"11","Georgia","Gold",475,13
 "12","Hawaii","Aluminum",4,15
-"13","Idaho","Gold",2787,16
-"14","Illinois","Lead",154,17
+"13","Idaho","Gold",3073,16
+"14","Illinois","Lead",169,17
 "15","Indiana","Iron",292,18
-"16","Iowa","Lead",59,19
-"17","Kansas","Lead",3,20
-"18","Kansas"," Zinc",3,20
+"16","Iowa","Lead",66,19
+"17","Kansas","Zinc",4,20
+"18","Kansas","Lead",4,20
 "19","Kentucky","Silica",27,21
 "20","Louisiana","Aluminum",4,22
-"21","Maine","Silver",102,23
-"22","Maryland","Iron",323,24
-"23","Massachusetts","Iron",83,25
+"21","Maine","Silver",137,23
+"22","Maryland","Iron",324,24
+"23","Massachusetts","Iron",84,25
 "24","Michigan","Iron",1082,26
-"25","Minnesota","Iron",1163,27
-"26","Mississippi","Iron",399,28
-"27","Missouri","Lead",2291,29
-"28","Montana","Gold",3262,30
+"25","Minnesota","Iron",1170,27
+"26","Mississippi","Iron",400,28
+"27","Missouri","Lead",3779,29
+"28","Montana","Gold",3606,30
 "29","Nebraska","Lead",2,31
-"30","Nevada","Gold",4790,32
+"30","Nevada","Gold",5403,32
 "31","New Hampshire","Silica",52,33
 "32","New Jersey","Iron",504,34
-"33","New Mexico","Uranium",748,35
-"34","New York","Iron",386,36
-"35","North Carolina","Gold",501,37
+"33","New Mexico","Gold",981,35
+"34","New York","Iron",407,36
+"35","North Carolina","Gold",524,37
 "36","North Dakota","Uranium",23,38
 "37","Ohio","Iron",36,39
-"38","Oklahoma","Copper",170,40
-"39","Oregon","Gold",4282,41
-"40","Pennsylvania","Iron",845,42
-"41","Rhode Island","Iron",3,44
-"42","South Carolina","Gold",255,45
-"43","South Dakota","Gold",456,46
-"44","Tennessee","Iron",543,47
-"45","Texas","Copper",168,48
-"46","Utah","Uranium",2055,49
-"47","Vermont","Iron",67,50
-"48","Virginia","Iron",703,51
-"49","Washington","Gold",1841,53
-"50","West Virginia","Iron",124,54
-"51","Wisconsin","Zinc",387,55
-"52","Wyoming","Uranium",2238,56
+"38","Oklahoma","Copper",173,40
+"39","Oregon","Gold",4510,41
+"40","Pennsylvania","Iron",848,42
+"41","Rhode Island","Iron",4,44
+"42","South Carolina","Gold",258,45
+"43","South Dakota","Gold",486,46
+"44","Tennessee","Iron",557,47
+"45","Texas","Copper",212,48
+"46","Utah","Uranium",2256,49
+"47","Vermont","Iron",70,50
+"48","Virginia","Iron",731,51
+"49","Washington","Gold",2428,53
+"50","West Virginia","Iron",126,54
+"51","Wisconsin","Zinc",406,55
+"52","Wyoming","Uranium",2245,56

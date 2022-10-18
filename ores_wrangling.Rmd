@@ -32,7 +32,8 @@ ores <- ores %>%
   unnest(state)
 
 ores <- ores %>%
-  mutate(state = str_trim(state))
+  mutate(state = str_trim(state)) %>%
+  mutate(commod1 = str_trim(commod1))
 
 ```
 
