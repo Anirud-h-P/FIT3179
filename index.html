@@ -6,14 +6,51 @@
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
   
+  
   <!-- CSS file -->
   <link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
+  
+    <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN     +Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+<script src="content_script.js"></script>
 
 
 </head>
-<body>
+<body onload = "init_charts()">
   
+
+
+
 <div id="choropleth_map"></div>
+
+  
+<div class="btn-group btn-group-toggle" data-toggle="buttons">
+
+<button type="button" class = "btn btn-light"> <img src="https://raw.githubusercontent.com/Anirud-h-P/FIT3179/main/assets/Copper.png" /></button>
+
+<button type="button" class = "btn btn-light"> <img src="https://raw.githubusercontent.com/Anirud-h-P/FIT3179/main/assets/Gold.png" /></button>
+
+<button type="button" class = "btn btn-light"> <img src="https://raw.githubusercontent.com/Anirud-h-P/FIT3179/main/assets/Iron.png" /></button>
+
+<button type="button" class = "btn btn-light"> <img src="https://raw.githubusercontent.com/Anirud-h-P/FIT3179/main/assets/Lead.png" /></button>
+
+<button type="button" class = "btn btn-light"> <img src="https://raw.githubusercontent.com/Anirud-h-P/FIT3179/main/assets/Silver.png" /></button>
+
+
+</div>
+
+
+
+
+
+
 
 
 
@@ -23,61 +60,78 @@
 
 <select id="state_select" class="form-control"
                     onchange="singleSelectChangeValue()">
-  <option value="Alabama">Alabama</option>
-  <option value="California">California</option>
+                    <option value=  "AL-01-alabama,Alabama" >Alabama</option>
+                    <option value="AK-02-alaska,Alaska">Alaska (This One is kinda small idk why)</option>
+                    <option value= "AZ-04-arizona,Arizona">Arizona</option>
+                    <option value="AR-05-arkansas,Arkansas">Arkansas</option>
+                    <option value="CA-06-california,California">California</option>
+                    <option value= "CO-08-colorado,Colorado">Colorado</option>
+                    <option value="CT-09-connecticut,Connecticut">Connecticut</option>
+                    <option value="DE-10-delaware,Delaware">Delaware</option>
+                    <option value= "District of Columbia">District of Columbia</option>
+                    <option value="FL-12-florida,Florida">Florida</option>
+                    <option value="GA-13-georgia,Georgia">Georgia</option>
+                    <option value= "HI-15-hawaii,Hawaii">Hawaii</option>
+                    <option value="ID-16-idaho,Idaho">Idaho</option>
+                    <option value="IL-17-illinois,Illinois">Illinois</option>
+                    <option value= "IN-18-indiana,Indiana">Indiana</option>
+                    <option value="IA-19-iowa,Iowa">Iowa</option>
+                    <option value="KS-20-kansas,Kansas">Kansas</option>
+                    <option value= "KY-21-kentucky,Kentucky">Kentucky</option>
+                    <option value="LA-22-louisiana-,Louisiana">Louisiana</option>
+                    <option value="ME-23-maine,Maine">Maine</option>
+                    <option value= "MD-24-maryland,Maryland">Maryland</option>
+                    <option value="MA-25-massachuesetts,Massachusetts">Massachusetts</option>
+                    <option value="Mi-26-michigan,Michigan">Michigan</option>
+                    <option value= "MN-27-minnesota,Minnesota">Minnesota</option>
+                    <option value="MS-28-mississippi,Mississippi">Mississippi</option>
+                    <option value="MO-29-missouri,Missouri">Missouri</option>
+                    <option value="MT-30-montana,Montana">Montana</option>
+                    <option value="NE-31-nebraska,Nebraska">Nebraska</option>
+                    <option value="NV-32-nevada,Nevada">Nevada</option>
+                    <option value= "NH-33-new-hampshire,New Hampshire">New Hampshire</option>
+                    <option value="NJ-34-new-jersey,New Jersey">New Jersy</option>
+                    <option value="NM-35-new-mexico,New Mexico">New Mexico</option>
+                    <option value= "NY-36-new-york,New York">New York</option>
+                    <option value="NC-37-north-carolina,North Carolina">North Carolina</option>
+                    <option value="ND-38-north-dakota,North Dakota">North Dakota</option>
+                    <option value= "OH-39-ohio,Ohio">Ohio</option>
+                    <option value="Ok-40-oklahoma,Oklahoma">Oklahoma</option>
+                    <option value="OR-41-oregon,Oregon">Oregon</option>
+                    <option value= "PA-42-pennsylvania,Pennsylvania">Pennsylvania</option>
+                    <option value="PR-72-puerto-rico,Puerto Rico">Puerto Rico</option>
+                    <option value="RI-44-rhode-island,Rhode Island">Rhode Island</option>
+                    <option value= "SC-45-south-carolina,South Carolina">South Carolina</option>
+                    <option value="SD-46-south-dakota,South Dakota">South Dakota</option>
+                    <option value="TN-47-tennessee,Tennessee">Tennessee</option>
+                    <option value= "TX-48-texas,Texas">Texas</option>
+                    <option value="UT-49-utah,Utah">Utah</option>
+                    <option value= "VT-50-vermont,Vermont">Vermont</option>
+                    <option value= "VA-51-virginia,Virginia">Virginia</option>
+                    <option value="WA-53-washington,Washington">Washington</option>
+                    <option value="WV-54-west-virginia,West Virginia">West Virginia</option>
+                    <option value= "Wisconsin">Wisconsin</option>
+                    <option value="WY-56-wyoming,Wyoming">Florida</option>
 
-  <option value="Texas">Texas</option>
+
 </select>
 
 
-<button onclick="myFunction()">Generate Graph for state</button>
+<button onclick="state_plots()">Generate Graph for state</button>
 
 
 <p>
   Select a state to see all deposits in the specific state
 </p>
+
+
+
 <p id="test">
   
   Map of State
   
 </p>
 
-<script>
-function myFunction() {
-  
-  var spec2 = "js/US_minerals.vg.json";
-  vegaEmbed('#choropleth_map', spec2).then(function(result) {
-    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-  }).catch(console.error);
-  
-  
-  var selObj = document.getElementById("state_select");
-  var selValue = selObj.options[selObj.selectedIndex].text;
-  document.getElementById("test").innerHTML = selValue;
-  if(selValue == "Alabama"){
-      var spec2 = "js/alab_minerals.vg.json";
-  vegaEmbed('#state_map', spec2).then(function(result) {
-    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-  }).catch(console.error);
-  }
-    if(selValue == "Texas"){
-      var spec2 = "js/texas_minerals.vg.json";
-  vegaEmbed('#state_map', spec2).then(function(result) {
-    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-  }).catch(console.error);
-  }
-  
-      if(selValue == "California"){
-      var spec2 = "js/cali_minerals.vg.json";
-  vegaEmbed('#state_map', spec2).then(function(result) {
-    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-  }).catch(console.error);
-  }
-  
-    
-  }
-
-</script>
 
 
 <div id="state_map"></div>
