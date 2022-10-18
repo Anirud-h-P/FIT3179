@@ -36,7 +36,7 @@ ores <- ores %>%
 
 ores <- ores %>%
   mutate(commod1 = str_trim(commod1)) %>%
-  filter(commod1 != "Construction")
+  filter(commod1 == "Gold" |commod1 == "Silver" |commod1 =="Copper" |commod1 == "Lead" |commod1 == "Iron")
 
 
 
@@ -60,7 +60,7 @@ state_max <- by_province %>%
   group_by(state)%>%
   filter(n == max(n))
 
-state_max <- merge(state_max,state_id,by = "state")
+state_max <- merge(state_max,state_id,by = "state", all.y = TRUE)
 
 state_max <- state_max[,1:4]
 
@@ -89,6 +89,15 @@ ores %>%
   group_by(state) %>%
   group_walk(~ write.csv(.x, paste0("state_deposits/",.y$state, ".csv")))
 list.files(temp, pattern = "csv$")
+
+```
+
+```{r}
+
+top_metals <- ores %>%
+  group_by(commod1) %>%
+  count()
+
 
 ```
 

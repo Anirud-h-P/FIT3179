@@ -1,5 +1,3 @@
 "","site_name","latitude","longitude","region","country","county","com_type","commod1","commod2","commod3","oper_type","dep_type","prod_size","dev_stat","ore","gangue","work_type","names","ore_ctrl","hrock_type","arock_type"
 "1","(Facility) Omaha Refinery",41.28331,-96.00859,NA,"United States","Douglas","M","Lead","","Silver, Antimony, Bismuth, Gold","Processing Plant","","","Plant","","","","","","",""
-"2","(Facility) Omaha Refinery",41.28331,-96.00859,NA,"United States","Douglas","M","Refiner","","Silver, Antimony, Bismuth, Gold","Processing Plant","","","Plant","","","","","","",""
-"3","Asarco (Omaha) Refinery",41.26361,-95.92417,NA,"United States","Douglas","M","Lead","","","Processing Plant","","","Past Producer","","","","","","",""
-"4","Asarco (Omaha) Refinery",41.26361,-95.92417,NA,"United States","Douglas","M","Smelter","","","Processing Plant","","","Past Producer","","","","","","",""
+"2","Asarco (Omaha) Refinery",41.26361,-95.92417,NA,"United States","Douglas","M","Lead","","","Processing Plant","","","Past Producer","","","","","","",""
