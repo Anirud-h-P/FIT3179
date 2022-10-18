@@ -5,6 +5,11 @@ function init_charts() {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
   
+  var spec3 = "js/us_bar.vg.json";
+  vegaEmbed('#us_bar', spec3).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+  
   
 }
 

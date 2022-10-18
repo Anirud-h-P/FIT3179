@@ -1,0 +1,18 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Bar chart",
+  "title": "Common Metal Deposits In United States",
+  "data": {
+    
+    "url": "https://raw.githubusercontent.com/Anirud-h-P/FIT3179/main/top_ores_us.csv"
+},
+"mark":"bar",
+  "encoding": {
+    "y": {"field": "Metal", "type": "ordinal","sort":"-x"},
+    "x": {"field": "Number Of Deposits", "type": "quantitative", "axis": {"labelSeparation":1}},
+    "color":{"field":"Metal"},
+    "tooltip":{"field":"Number Of Deposits","type":"quantitative"}
+
+  }
+  
+}
