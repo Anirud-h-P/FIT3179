@@ -1,0 +1,192 @@
+"","state","Metal","Number Of Deposits","id"
+"1","Alabama","Gold",263,1
+"2","Alabama","Copper",12,1
+"3","Alabama","Lead",8,1
+"4","Alabama","Iron",1117,1
+"5","Alaska","Gold",6702,2
+"6","Alaska","Iron",190,2
+"7","Alaska","Silver",815,2
+"8","Alaska","Copper",2195,2
+"9","Alaska","Lead",674,2
+"10","Arizona","Iron",199,4
+"11","Arizona","Copper",2855,4
+"12","Arizona","Gold",3042,4
+"13","Arizona","Lead",1392,4
+"14","Arizona","Silver",2642,4
+"15","Arkansas","Iron",67,5
+"16","Arkansas","Copper",7,5
+"17","Arkansas","Silver",2,5
+"18","Arkansas","Lead",205,5
+"19","California","Copper",1854,6
+"20","California","Lead",646,6
+"21","California","Silver",1220,6
+"22","California","Gold",22862,6
+"23","California","Iron",408,6
+"24","Colorado","Gold",5022,8
+"25","Colorado","Copper",826,8
+"26","Colorado","Iron",150,8
+"27","Colorado","Lead",1699,8
+"28","Colorado","Silver",2144,8
+"29","Connecticut","Copper",19,9
+"30","Connecticut","Lead",8,9
+"31","Connecticut","Silver",8,9
+"32","Connecticut","Gold",6,9
+"33","Connecticut","Iron",41,9
+"34","Delaware","Iron",9,10
+"35","District of Columbia","Iron",2,11
+"36","Florida","Iron",12,12
+"37","Georgia","Gold",475,13
+"38","Georgia","Copper",13,13
+"39","Georgia","Iron",328,13
+"40","Georgia","Lead",3,13
+"41","Hawaii",NA,NA,15
+"42","Idaho","Gold",3073,16
+"43","Idaho","Copper",766,16
+"44","Idaho","Silver",1490,16
+"45","Idaho","Lead",1120,16
+"46","Idaho","Iron",90,16
+"47","Illinois","Gold",1,17
+"48","Illinois","Lead",169,17
+"49","Illinois","Copper",2,17
+"50","Illinois","Iron",5,17
+"51","Illinois","Silver",1,17
+"52","Indiana","Lead",2,18
+"53","Indiana","Iron",292,18
+"54","Iowa","Iron",7,19
+"55","Iowa","Lead",66,19
+"56","Kansas","Lead",4,20
+"57","Kentucky","Iron",9,21
+"58","Kentucky","Lead",3,21
+"59","Louisiana",NA,NA,22
+"60","Maine","Gold",69,23
+"61","Maine","Silver",137,23
+"62","Maine","Lead",118,23
+"63","Maine","Copper",123,23
+"64","Maine","Iron",20,23
+"65","Maryland","Iron",324,24
+"66","Maryland","Copper",22,24
+"67","Maryland","Gold",28,24
+"68","Maryland","Silver",1,24
+"69","Massachusetts","Iron",84,25
+"70","Massachusetts","Copper",19,25
+"71","Massachusetts","Gold",5,25
+"72","Massachusetts","Silver",2,25
+"73","Massachusetts","Lead",26,25
+"74","Michigan","Gold",45,26
+"75","Michigan","Silver",21,26
+"76","Michigan","Copper",356,26
+"77","Michigan","Iron",1082,26
+"78","Michigan","Lead",17,26
+"79","Minnesota","Gold",18,27
+"80","Minnesota","Copper",15,27
+"81","Minnesota","Iron",1170,27
+"82","Minnesota","Silver",3,27
+"83","Mississippi","Iron",400,28
+"84","Missouri","Copper",114,29
+"85","Missouri","Lead",3779,29
+"86","Missouri","Silver",22,29
+"87","Missouri","Gold",8,29
+"88","Missouri","Iron",1364,29
+"89","Montana","Copper",1096,30
+"90","Montana","Iron",172,30
+"91","Montana","Gold",3606,30
+"92","Montana","Lead",1332,30
+"93","Montana","Silver",2044,30
+"94","Nebraska","Lead",2,31
+"95","Nevada","Lead",1162,32
+"96","Nevada","Copper",1292,32
+"97","Nevada","Gold",5403,32
+"98","Nevada","Iron",215,32
+"99","Nevada","Silver",3158,32
+"100","New Hampshire","Gold",11,33
+"101","New Hampshire","Silver",3,33
+"102","New Hampshire","Lead",32,33
+"103","New Hampshire","Copper",31,33
+"104","New Hampshire","Iron",12,33
+"105","New Jersey","Lead",1,34
+"106","New Jersey","Copper",32,34
+"107","New Jersey","Iron",504,34
+"108","New Jersey","Silver",1,34
+"109","New Mexico","Iron",284,35
+"110","New Mexico","Copper",766,35
+"111","New Mexico","Gold",981,35
+"112","New Mexico","Silver",960,35
+"113","New Mexico","Lead",526,35
+"114","New York","Gold",1,36
+"115","New York","Silver",5,36
+"116","New York","Copper",6,36
+"117","New York","Iron",407,36
+"118","New York","Lead",52,36
+"119","North Carolina","Gold",524,37
+"120","North Carolina","Copper",130,37
+"121","North Carolina","Iron",238,37
+"122","North Carolina","Lead",32,37
+"123","North Carolina","Silver",16,37
+"124","North Dakota",NA,NA,38
+"125","Ohio","Copper",1,39
+"126","Ohio","Lead",1,39
+"127","Ohio","Iron",36,39
+"128","Oklahoma","Lead",13,40
+"129","Oklahoma","Copper",173,40
+"130","Oregon","Copper",726,41
+"131","Oregon","Iron",107,41
+"132","Oregon","Gold",4510,41
+"133","Oregon","Lead",153,41
+"134","Oregon","Silver",696,41
+"135","Pennsylvania","Copper",33,42
+"136","Pennsylvania","Silver",4,42
+"137","Pennsylvania","Gold",3,42
+"138","Pennsylvania","Iron",848,42
+"139","Pennsylvania","Lead",38,42
+"140","Rhode Island","Gold",2,44
+"141","Rhode Island","Iron",4,44
+"142","South Carolina","Copper",10,45
+"143","South Carolina","Gold",258,45
+"144","South Carolina","Silver",6,45
+"145","South Carolina","Iron",111,45
+"146","South Carolina","Lead",2,45
+"147","South Dakota","Copper",18,46
+"148","South Dakota","Lead",20,46
+"149","South Dakota","Silver",192,46
+"150","South Dakota","Gold",486,46
+"151","South Dakota","Iron",26,46
+"152","Tennessee","Copper",10,47
+"153","Tennessee","Lead",31,47
+"154","Tennessee","Gold",124,47
+"155","Tennessee","Iron",557,47
+"156","Texas","Copper",212,48
+"157","Texas","Lead",100,48
+"158","Texas","Silver",132,48
+"159","Texas","Gold",34,48
+"160","Texas","Iron",98,48
+"161","Utah","Copper",1066,49
+"162","Utah","Gold",794,49
+"163","Utah","Iron",336,49
+"164","Utah","Lead",1460,49
+"165","Utah","Silver",1454,49
+"166","Vermont","Copper",56,50
+"167","Vermont","Gold",20,50
+"168","Vermont","Iron",70,50
+"169","Vermont","Lead",32,50
+"170","Vermont","Silver",3,50
+"171","Virginia","Copper",214,51
+"172","Virginia","Gold",392,51
+"173","Virginia","Iron",731,51
+"174","Virginia","Lead",56,51
+"175","Virginia","Silver",9,51
+"176","Washington","Copper",1584,53
+"177","Washington","Gold",2428,53
+"178","Washington","Iron",212,53
+"179","Washington","Lead",1113,53
+"180","Washington","Silver",1510,53
+"181","West Virginia","Iron",126,54
+"182","Wisconsin","Copper",92,55
+"183","Wisconsin","Gold",3,55
+"184","Wisconsin","Iron",45,55
+"185","Wisconsin","Lead",351,55
+"186","Wisconsin","Silver",1,55
+"187","Wyoming","Copper",191,56
+"188","Wyoming","Gold",213,56
+"189","Wyoming","Iron",122,56
+"190","Wyoming","Lead",20,56
+"191","Wyoming","Silver",46,56
