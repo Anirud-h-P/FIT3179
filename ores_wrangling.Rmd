@@ -86,14 +86,14 @@ ores_state <- ores %>%
   count()
 
 
-ores_state %>%
+ores_state <- ores_state %>%
   group_by(state) %>%
   top_n(10,n)%>%
   merge(state_id,by = "state", all.y = TRUE)
 
 
 ores_state <- ores_state[,c(1,2,3)]
-colnames(ores_state) <- c("state","Metal","Number Of Deposits","id")
+colnames(ores_state) <- c("state","Metal","Number Of Deposits")
 
 write.csv(ores_state,"alldeposits_bystate.csv")
 ```

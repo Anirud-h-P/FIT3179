@@ -72,7 +72,7 @@ function state_plots() {
   encoding: {
     longitude: {field: "longitude", type: "quantitative"},
     latitude: {field: "latitude", type: "quantitative"},
-    
+    "size": {"value": 5},
     color: {field: "commod1", type: "nominal"}
   }
 }
@@ -86,10 +86,10 @@ function state_plots() {
   var state_pie = {
   $schema: "https://vega.github.io/schema/vega-lite/v5.json",
   description: "Bar chart",
-  title: "Breakdown Of Common Metal Deposits In" ,
+  title: "Top 10 Metal Deposits In" + state_name ,
   data: {
     
-    url: "https://raw.githubusercontent.com/Anirud-h-P/FIT3179/main/alleposits_bystate.csv"
+    url: "https://raw.githubusercontent.com/Anirud-h-P/FIT3179/main/alldeposits_bystate.csv"
 },
 
 mark:"arc",

@@ -26,12 +26,13 @@
 <body onload = "init_charts()">
   
 
+<div class = "chart_section">
+  <div id="choropleth_map"></div>
+  <div id = "us_bar"></div>
+  
+</div>
 
 
-<div id="choropleth_map"></div>
-
-
-<div id = "us_bar"></div>
 
   
 <div class="btn-group btn-group-toggle" data-toggle="buttons">
@@ -50,11 +51,15 @@
 </div>
 
 
-
-<div id = "dot_chart"> </div>
+<div class = "chart_section">
+  <div id = "dot_chart"> </div>
 
 
 <div id = "metals_us_bar"></div>
+  
+  
+</div>
+
 
 
 
@@ -65,7 +70,6 @@
 <select id="state_select" class="form-control"
                     onchange="singleSelectChangeValue()">
                     <option value=  "AL-01-alabama,Alabama" >Alabama</option>
-                    <option value="AK-02-alaska,Alaska">Alaska (This One is kinda small idk why)</option>
                     <option value= "AZ-04-arizona,Arizona">Arizona</option>
                     <option value="AR-05-arkansas,Arkansas">Arkansas</option>
                     <option value="CA-06-california,California">California</option>
@@ -136,11 +140,14 @@
   
 </p>
 
-
-
+<div class = "chart_section">
 <div id="state_map"></div>
 
-<div id="state_pie"></div>
+<div id="state_pie"></div>  
+  
+</div>
+
+
 
 
 
