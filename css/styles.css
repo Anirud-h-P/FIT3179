@@ -26,3 +26,9 @@ img {
   height: auto;
 }
 
+#lead_arrow {
+  z-index:-1
+  position: relative;
+}
+  
+}
