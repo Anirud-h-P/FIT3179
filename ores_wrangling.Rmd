@@ -141,12 +141,23 @@ list.files(temp, pattern = "csv$")
 
 ```{r}
 dir.create(temp <- tempfile())
+
+vec <- c("Gold", "Silver","Copper","Lead","Iron")
+for(i in 1:5){
+
 ores %>%
   mutate(commod1 = str_trim(commod1)) %>%
-  filter(commod1 == "Gold" |commod1 == "Silver" |commod1 =="Copper" |commod1 == "Lead" |commod1 == "Iron") %>%
-  group_by(commod1,state) %>%
+  filter(commod1 == vec[i]) %>%
+  group_by(state) %>%
   count() %>%
-  write.csv("ores_short.csv")
+  merge(state_id[,1:2],by = "state", all.y = TRUE) %>%
+  write.csv(paste0("metal_groups/",vec[i], ".csv"))
+  
+  
+}
+
+
+
 
 
 ```
