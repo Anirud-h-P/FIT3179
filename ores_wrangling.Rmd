@@ -145,19 +145,32 @@ dir.create(temp <- tempfile())
 vec <- c("Gold", "Silver","Copper","Lead","Iron")
 for(i in 1:5){
 
-ores %>%
+ores_arr <- ores %>%
   mutate(commod1 = str_trim(commod1)) %>%
   filter(commod1 == vec[i]) %>%
   group_by(state) %>%
   count() %>%
-  merge(state_id[,1:2],by = "state") %>%
-  write.csv(paste0("metal_groups/",vec[i], ".csv"))
+  merge(state_id[,1:2],by = "state",all.y = TRUE) 
   
+  
+  ores_arr$n[is.na(ores_arr$n)] <- 0
+  write.csv(ores_arr ,paste0("metal_groups/",vec[i], ".csv"))
   
 }
 
 
 
+
+
+```
+```{r}
+ores_test <- ores %>%
+  mutate(commod1 = str_trim(commod1)) %>%
+  filter(commod1 == "Iron") %>%
+  group_by(state) %>%
+  count() %>%
+  merge(state_id[,1:2],by = "state",all.y = TRUE)
+  
 
 
 ```
