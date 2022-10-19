@@ -24,7 +24,6 @@ function init_charts() {
 
 
   
-  
 
 
   
@@ -65,15 +64,22 @@ mark:"bar",
               {filter:"datum.Metal == 'Copper'"}]
   
 }
-
-
-  vegaEmbed('#metals_us_bar', copper_bar).then(function(result) {
+vegaEmbed('#metals_us_bar', copper_bar).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
+  
+  
+
+
+
 
   
   
 }
+
+  
+  
+
 function gold_charts(){
   
 

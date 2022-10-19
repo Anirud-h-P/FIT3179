@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "matrix plot",
-  "title": "Top Five Metal Production In Deposit rich states",
+  "title": "Metal Deposits In Metal-Rich States",
   "width": 600,
   "height": 300,
   "data": {
