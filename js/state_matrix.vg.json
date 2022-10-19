@@ -1,11 +1,13 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Though Vega-Lite supports only one scale per axes, one can create a parallel coordinate plot by folding variables, using `joinaggregate` to normalize their values and using ticks and rules to manually create axes.",
+  "description": "matrix plot",
+  "title": "Top Five Metal Production In Deposit rich states",
+  "width": 600,
+  "height": 300,
   "data": {
     "url": "https://raw.githubusercontent.com/Anirud-h-P/FIT3179/main/state_matrix.csv"
   },
-  "width": 600,
-  "height": 300,
+
   "transform": [
     {"filter": "datum['Copper']"},
     {"window": [{"op": "count", "as": "index"}]},

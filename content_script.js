@@ -16,6 +16,9 @@ function init_charts() {
   }).catch(console.error);
   
   
+  copper_charts()
+  
+  
 }
 
 
@@ -39,7 +42,7 @@ var copper = "js/copper_plots.vg.json";
 var copper_bar = {
   $schema: "https://vega.github.io/schema/vega-lite/v5.json",
   description: "Bar chart",
-  title: "Common Metal Deposits In United States",
+  title: "Number Of Copper Deposits By State",
   data: {
     
     url: "https://raw.githubusercontent.com/Anirud-h-P/FIT3179/main/topdeposits_bystate.csv"
@@ -84,7 +87,7 @@ var gold = "js/gold_plots.vg.json";
 var gold_bar = {
   $schema: "https://vega.github.io/schema/vega-lite/v5.json",
   description: "Bar chart",
-  title: "Common Metal Deposits In United States",
+  title: "Number Of Gold Deposits By State",
   data: {
     
     url: "https://raw.githubusercontent.com/Anirud-h-P/FIT3179/main/topdeposits_bystate.csv"
@@ -127,7 +130,7 @@ var iron = "js/iron_plots.vg.json";
 var iron_bar = {
   $schema: "https://vega.github.io/schema/vega-lite/v5.json",
   description: "Bar chart",
-  title: "Common Metal Deposits In United States",
+  title: "Number Of Iron Deposits By State",
   data: {
     
     url: "https://raw.githubusercontent.com/Anirud-h-P/FIT3179/main/topdeposits_bystate.csv"
@@ -173,7 +176,7 @@ var lead = "js/lead_plots.vg.json";
 var lead_bar = {
   $schema: "https://vega.github.io/schema/vega-lite/v5.json",
   description: "Bar chart",
-  title: "Common Metal Deposits In United States",
+  title: "Number Of Lead Deposits By State",
   data: {
     
     url: "https://raw.githubusercontent.com/Anirud-h-P/FIT3179/main/topdeposits_bystate.csv"
@@ -215,7 +218,7 @@ var silver = "js/silver_plots.vg.json";
 var silver_bar = {
   $schema: "https://vega.github.io/schema/vega-lite/v5.json",
   description: "Bar chart",
-  title: "States with most Silver Deposits",
+  title: "Number Of Silver Deposits By State",
   data: {
     
     url: "https://raw.githubusercontent.com/Anirud-h-P/FIT3179/main/topdeposits_bystate.csv"
