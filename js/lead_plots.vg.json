@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "width": 500,
   "height": 300,
-  "title": "Distribution Of LEad Deposits Across United States",
+  "title": "Distribution Of Lead Deposits",
   "layer":[
   {"data": {
     "url": "https://raw.githubusercontent.com/vega/vega/main/docs/data/us-10m.json",

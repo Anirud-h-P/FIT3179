@@ -10,114 +10,16 @@ function init_charts() {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
   
+          var spec3 = "js/state_matrix.vg.json";
+  vegaEmbed('#state_matrix', spec3).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
   
-}
-
-
-function state_plots() {
-  
-  
-  var selObj = document.getElementById("state_select");
-  var selValue = selObj.options[selObj.selectedIndex].value;
-  
-  var state_array = selValue.split(',')
-  var state_name = state_array[1]
-  var state_code = state_array[0]
-  var state_name_str = "'" +   state_name + "'"
-  document.getElementById("test").innerHTML = state_name_str
-  var state_name_lower = state_name.toLowerCase()
-  url = "https://raw.githubusercontent.com/Anirud-h-P/FIT3179/main/state_deposits/" + state_name + ".csv"
-  
-  var map_url = "https://raw.githubusercontent.com/deldersveld/topojson/master/countries/us-states/"+state_code+ "-counties.json"
-  var counties = "cb_2015_" +state_name_lower + "_county_20m"
-  if(state_name == "Louisiana"){var map_url ="https://raw.githubusercontent.com/deldersveld/topojson/master/countries/us-states/LA-22-louisiana-parishes.json" }
-    if(state_name == "Louisiana"){var counties = "cb_2015_louisiana_parish_20m"}
-  
-  
-  
-  var state_map = {
-    
-    
-  $schema: "https://vega.github.io/schema/vega-lite/v5.json",
-  width: 500,
-  height: 300,
-  title: "Plot of all Metal Deposits " + state_name ,
-  layer: [
-    {
-      data: {
-        url: map_url,
-        format: {
-          type: "topojson",
-          feature: counties
-        }
-      },
-      
-      projection: {
-        type: "mercator"
-      },
-      mark: {
-        type: "geoshape",
-        fill: "lightgray"
-      }
-    
-
-
-
-},
-    {data: {
-    url: url
-  },
-
-  projection: {type: "mercator"},
-  mark: "circle",
-  encoding: {
-    longitude: {field: "longitude", type: "quantitative"},
-    latitude: {field: "latitude", type: "quantitative"},
-    size: {"value": 5},
-    color: {field: "Metal", type: "nominal"}
-    
-  }
-}
-
-
-]
-    
-  }
-  
-  
-  var state_pie = {
-  $schema: "https://vega.github.io/schema/vega-lite/v5.json",
-  description: "Bar chart",
-  title: "Top 10 Metal Deposits In " + state_name ,
-  data: {
-    
-    url: "https://raw.githubusercontent.com/Anirud-h-P/FIT3179/main/alldeposits_bystate.csv"
-},
-
-mark:"arc",
-
-
-  encoding: {
-    
-    theta: {field: "Number Of Deposits", type: "quantitative"},
-    color: {field: "Metal", type: "nominal"},
-    tooltip:[{field:"Metal",type:"nominal",title:"Metal"},
-               {field:"Number Of Deposits",type:"quantitative",title:"Number Of Deposits"}]
-
-  },
-  transform:[{filter:"datum.state ==" + state_name_str}]
   
 }
 
 
 
-      
-      
-vegaEmbed('#state_map',state_map)
-vegaEmbed('#state_pie',state_pie)
-
-    
-  }
   
   
 
@@ -244,7 +146,7 @@ mark:"bar",
 
   },
 
-  transform:[{filter:"datum['Number Of Deposits'] > 50"},
+  transform:[{filter:"datum['Number Of Deposits'] > 250"},
               {filter:"datum.Metal == 'Iron'"}]
   
 }
@@ -341,6 +243,19 @@ mark:"bar",
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
 
+  
+  
+}
+
+
+
+function embed_state_matrix(){
+  
+    var spec3 = "js/state_matrix.vg.json";
+  vegaEmbed('#state_matrix', spec3).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+  
   
   
 }
