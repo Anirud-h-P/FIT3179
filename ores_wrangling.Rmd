@@ -154,7 +154,7 @@ ores_arr <- ores %>%
   
   
   ores_arr$n[is.na(ores_arr$n)] <- 0
-  colnames(ores_arr) <- ("state", "number of Deposits" , "")
+  colnames(ores_arr) <- c("state", "number of Deposits" , "id")
   write.csv(ores_arr ,paste0("metal_groups/",vec[i], ".csv"))
   
 }
