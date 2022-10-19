@@ -218,7 +218,8 @@ state_matrix  <- state_matrix %>%
   pivot_wider(names_from = commod1,values_from = n)
 
 state_matrix <- state_matrix %>%
-  filter(state == "California" |state ==  "Colorado" |state ==  "Alaska" |state ==  "Nevada" |state ==  "Missouri")
+  filter(state == "California" |state ==  "Colorado" |state ==  "Alaska" |state ==  "Nevada" |state ==  "Missouri" |state == "Arizona"
+         |state == "Utah" | state == "Oregon" | state == "Montana")
   
 
 write.csv(state_matrix,"state_matrix.csv")
