@@ -63,7 +63,7 @@ state_id <- read.csv("state_id.csv")
 
 ores_state <- ores %>%
   mutate(commod1 = str_trim(commod1)) %>%
-  filter(commod1 == "Gold" |commod1 == "Silver" |commod1 =="Copper" |commod1 == "Lead" |commod1 == "Iron") %>%
+  filter(commod1 == "Gold") %>%
   
   group_by(state,commod1) %>%
   count()  %>%
@@ -108,6 +108,13 @@ write.csv(state_max,"top_metal.csv")
 write.csv(ores[,c(1,2,3,6,7,9,16)],"ores_short.csv")
 ```
 
+
+```{r}
+
+
+
+```
+
 ```{r}
 dir.create(temp <- tempfile())
 ores %>%
@@ -132,6 +139,20 @@ list.files(temp, pattern = "csv$")
 ```
 
 
+```{r}
+dir.create(temp <- tempfile())
+ores %>%
+  mutate(commod1 = str_trim(commod1)) %>%
+  filter(commod1 == "Gold" |commod1 == "Silver" |commod1 =="Copper" |commod1 == "Lead" |commod1 == "Iron") %>%
+  group_by(commod1,state) %>%
+  count() %>%
+  write.csv("ores_short.csv")
+
+
+```
+
+    group_walk(~ write.csv(.x, paste0("metal_groups/",.y$commod1, ".csv")))
+list.files(temp, pattern = "csv$")
 
 
 
