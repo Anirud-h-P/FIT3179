@@ -147,13 +147,12 @@ s_c <- ores %>%
 
 ```{r}
 dir.create(temp <- tempfile())
-ores %>%
+ores[,c(9,2,3)] %>%
   mutate(commod1 = str_trim(commod1)) %>%
   filter(commod1 == "Gold" |commod1 == "Silver" |commod1 =="Copper" |commod1 == "Lead" |commod1 == "Iron") %>%
   group_by(commod1) %>%
-  
   group_walk(~ write.csv(.x, paste0("by_metal_us/",.y$commod1, ".csv")))
-list.files(temp, pattern = "csv$")
+  list.files(temp, pattern = "csv$")
 
 ```
 
