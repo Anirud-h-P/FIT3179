@@ -2,23 +2,36 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "width": 500,
   "height": 300,
+  "title": "Distribution Of Copper Deposits Across United States",
   "data": {
-    "url": "data/us-10m.json",
-    "format": {"type": "topojson", "feature": "states"}
-  },
-  "transform": [
-    {
-      "lookup": "id",
-      "from": {
-        "data": {
-          "url": "https://raw.githubusercontent.com/Anirud-h-P/FIT3179/main/metal_groups/Copper.csv"
-        },
-        "key": "id",
-        "fields": ["state", "number of Deposits"]
-      }
+    "url": "https://raw.githubusercontent.com/vega/vega/main/docs/data/us-10m.json",
+    "format": {
+      "type": "topojson",
+      "feature": "states"
     }
+  },
+  "transform": [{
+    "lookup": "id",
+    "from": {
+      "data": {
+        "url": "https://raw.githubusercontent.com/Anirud-h-P/FIT3179/main/metal_groups/Copper.csv"
+      },
+      "key": "id",
+      "fields": ["state","number of Deposits"]
+    }
+  }
+
+  
+  
   ],
-  "projection": {"type": "albersUsa"},
+  "projection": {
+    "type": "albersUsa"
+  },
   "mark": "geoshape",
-  "encoding": {"color": {"field": "number of Deposits", "type": "quantitative"}}
+  "encoding": {
+    "color": {
+      "field": "number of Deposits",
+      "type": "quantitative"
+    }
+  }
 }

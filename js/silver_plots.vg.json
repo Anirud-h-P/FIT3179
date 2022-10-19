@@ -2,46 +2,36 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "width": 500,
   "height": 300,
-  "layer": [
-    {
-      "data": {
-        "url": "data/us-10m.json",
-        "format": {
-          "type": "topojson",
-          "feature": "states"
-        }
-      },
-      "projection": {
-        "type": "albersUsa"
-      },
-      "mark": {
-        "type": "geoshape",
-        "fill": "lightgray",
-        "stroke": "white"
-      }
-    },
-    {
+  "title": "Distribution Of Silver Deposits Across United States",
+  "data": {
+    "url": "https://raw.githubusercontent.com/vega/vega/main/docs/data/us-10m.json",
+    "format": {
+      "type": "topojson",
+      "feature": "states"
+    }
+  },
+  "transform": [{
+    "lookup": "id",
+    "from": {
       "data": {
         "url": "https://raw.githubusercontent.com/Anirud-h-P/FIT3179/main/metal_groups/Silver.csv"
       },
-
-      
-      "projection": {
-        "type": "albersUsa"
-      },
-      "mark": "circle",
-      "encoding": {
-        "longitude": {
-          "field": "longitude",
-          "type": "quantitative"
-        },
-        "latitude": {
-          "field": "latitude",
-          "type": "quantitative"
-        },
-        "size": {"value": 2},
-        "color": {"value": "grey"}
-      }
+      "key": "id",
+      "fields": ["state","number of Deposits"]
     }
-  ]
+  }
+
+  
+  
+  ],
+  "projection": {
+    "type": "albersUsa"
+  },
+  "mark": "geoshape",
+  "encoding": {
+    "color": {
+      "field": "number of Deposits",
+      "type": "quantitative"
+    }
+  }
 }
