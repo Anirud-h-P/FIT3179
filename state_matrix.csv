@@ -1,51 +1,6 @@
 "","state","Copper","Gold","Iron","Lead","Silver"
-"1","Alabama",12,263,1117,8,NA
-"2","Alaska",2195,6702,190,674,815
-"3","Arizona",2855,3042,199,1392,2642
-"4","Arkansas",7,NA,67,205,2
-"5","California",1854,22862,408,646,1220
-"6","Colorado",826,5022,150,1699,2144
-"7","Connecticut",19,6,41,8,8
-"8","Delaware",NA,NA,9,NA,NA
-"9","District of Columbia",NA,NA,2,NA,NA
-"10","Florida",NA,NA,12,NA,NA
-"11","Georgia",13,475,328,3,NA
-"12","Idaho",766,3073,90,1120,1490
-"13","Illinois",2,1,5,169,1
-"14","Indiana",NA,NA,292,2,NA
-"15","Iowa",NA,NA,7,66,NA
-"16","Kansas",NA,NA,NA,4,NA
-"17","Kentucky",NA,NA,9,3,NA
-"18","Maine",123,69,20,118,137
-"19","Maryland",22,28,324,NA,1
-"20","Massachusetts",19,5,84,26,2
-"21","Michigan",356,45,1082,17,21
-"22","Minnesota",15,18,1170,NA,3
-"23","Mississippi",NA,NA,400,NA,NA
-"24","Missouri",114,8,1364,3779,22
-"25","Montana",1096,3606,172,1332,2044
-"26","Nebraska",NA,NA,NA,2,NA
-"27","Nevada",1292,5403,215,1162,3158
-"28","New Hampshire",31,11,12,32,3
-"29","New Jersey",32,NA,504,1,1
-"30","New Mexico",766,981,284,526,960
-"31","New York",6,1,407,52,5
-"32","North Carolina",130,524,238,32,16
-"33","Ohio",1,NA,36,1,NA
-"34","Oklahoma",173,NA,NA,13,NA
-"35","Oregon",726,4510,107,153,696
-"36","Pennsylvania",33,3,848,38,4
-"37","Puerto Rico",114,27,36,7,9
-"38","Rhode Island",NA,2,4,NA,NA
-"39","South Carolina",10,258,111,2,6
-"40","South Dakota",18,486,26,20,192
-"41","Tennessee",10,124,557,31,NA
-"42","Texas",212,34,98,100,132
-"43","U.S. Virgin Islands",1,3,NA,NA,NA
-"44","Utah",1066,794,336,1460,1454
-"45","Vermont",56,20,70,32,3
-"46","Virginia",214,392,731,56,9
-"47","Washington",1584,2428,212,1113,1510
-"48","West Virginia",NA,NA,126,NA,NA
-"49","Wisconsin",92,3,45,351,1
-"50","Wyoming",191,213,122,20,46
+"1","Alaska",2195,6702,190,674,815
+"2","California",1854,22862,408,646,1220
+"3","Colorado",826,5022,150,1699,2144
+"4","Missouri",114,8,1364,3779,22
+"5","Nevada",1292,5403,215,1162,3158
