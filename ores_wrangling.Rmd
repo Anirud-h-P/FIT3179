@@ -206,6 +206,23 @@ ores_test <- ores %>%
 
 ```
 
+```{r}
+state_matrix <- ores %>%
+  filter(commod1 == "Gold" |commod1 == "Silver" |commod1 =="Copper" |commod1 == "Lead" |commod1 == "Iron") %>%
+  group_by(state,commod1) %>%
+  count()
+
+
+
+state_matrix  <- state_matrix %>%
+  pivot_wider(names_from = commod1,values_from = n)
+
+
+write.csv(state_matrix,"state_matrix.csv")
+
+
+```
+
     group_walk(~ write.csv(.x, paste0("metal_groups/",.y$commod1, ".csv")))
 list.files(temp, pattern = "csv$")
 
