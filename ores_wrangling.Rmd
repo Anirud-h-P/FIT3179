@@ -150,7 +150,7 @@ ores %>%
   filter(commod1 == vec[i]) %>%
   group_by(state) %>%
   count() %>%
-  merge(state_id[,1:2],by = "state", all.y = TRUE) %>%
+  merge(state_id[,1:2],by = "state") %>%
   write.csv(paste0("metal_groups/",vec[i], ".csv"))
   
   
