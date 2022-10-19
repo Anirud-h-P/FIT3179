@@ -63,7 +63,7 @@ state_id <- read.csv("state_id.csv")
 
 ores_state <- ores %>%
   mutate(commod1 = str_trim(commod1)) %>%
-  filter(commod1 == "Gold") %>%
+  filter(commod1 == "Gold" |commod1 == "Silver" |commod1 =="Copper" |commod1 == "Lead" |commod1 == "Iron") %>%
   
   group_by(state,commod1) %>%
   count()  %>%
