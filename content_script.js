@@ -41,6 +41,7 @@ function state_plots() {
   $schema: "https://vega.github.io/schema/vega-lite/v5.json",
   width: 500,
   height: 300,
+  title: "Plot of all Metal Deposits " + state_name ,
   layer: [
     {
       data: {
@@ -72,8 +73,9 @@ function state_plots() {
   encoding: {
     longitude: {field: "longitude", type: "quantitative"},
     latitude: {field: "latitude", type: "quantitative"},
-    "size": {"value": 5},
-    color: {field: "commod1", type: "nominal"}
+    size: {"value": 5},
+    color: {field: "Metal", type: "nominal"}
+    
   }
 }
 
@@ -86,7 +88,7 @@ function state_plots() {
   var state_pie = {
   $schema: "https://vega.github.io/schema/vega-lite/v5.json",
   description: "Bar chart",
-  title: "Top 10 Metal Deposits In" + state_name ,
+  title: "Top 10 Metal Deposits In " + state_name ,
   data: {
     
     url: "https://raw.githubusercontent.com/Anirud-h-P/FIT3179/main/alldeposits_bystate.csv"

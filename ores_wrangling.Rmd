@@ -138,7 +138,9 @@ write.csv(ores[,c(1,2,3,6,7,9,16)],"ores_short.csv")
 
 
 ```{r}
-
+s_c <- ores %>%
+  group_by(state)%>%
+  count()
 
 
 ```
@@ -146,10 +148,11 @@ write.csv(ores[,c(1,2,3,6,7,9,16)],"ores_short.csv")
 ```{r}
 dir.create(temp <- tempfile())
 ores %>%
-  group_by(state) %>%
   mutate(commod1 = str_trim(commod1)) %>%
   filter(commod1 == "Gold" |commod1 == "Silver" |commod1 =="Copper" |commod1 == "Lead" |commod1 == "Iron") %>%
-  group_walk(~ write.csv(.x, paste0("state_deposits/",.y$state, ".csv")))
+  group_by(commod1) %>%
+  
+  group_walk(~ write.csv(.x, paste0("by_metal_us/",.y$commod1, ".csv")))
 list.files(temp, pattern = "csv$")
 
 ```
