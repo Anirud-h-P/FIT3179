@@ -23,7 +23,8 @@ function state_plots() {
   var state_array = selValue.split(',')
   var state_name = state_array[1]
   var state_code = state_array[0]
-  document.getElementById("test").innerHTML = state_name
+  var state_name_str = "'" +   state_name + "'"
+  document.getElementById("test").innerHTML = state_name_str
   var state_name_lower = state_name.toLowerCase()
   url = "https://raw.githubusercontent.com/Anirud-h-P/FIT3179/main/state_deposits/" + state_name + ".csv"
   
@@ -80,13 +81,38 @@ function state_plots() {
 ]
     
   }
+  
+  
+  var state_pie = {
+  $schema: "https://vega.github.io/schema/vega-lite/v5.json",
+  description: "Bar chart",
+  title: "Breakdown Of Common Metal Deposits In" ,
+  data: {
+    
+    url: "https://raw.githubusercontent.com/Anirud-h-P/FIT3179/main/alleposits_bystate.csv"
+},
+
+mark:"arc",
+
+
+  encoding: {
+    
+    theta: {field: "Number Of Deposits", type: "quantitative"},
+    color: {field: "Metal", type: "nominal"},
+    tooltip:[{field:"Metal",type:"nominal",title:"Metal"},
+               {field:"Number Of Deposits",type:"quantitative",title:"Number Of Deposits"}]
+
+  },
+  transform:[{filter:"datum.state ==" + state_name_str}]
+  
+}
 
 
 
       
       
 vegaEmbed('#state_map',state_map)
-
+vegaEmbed('#state_pie',state_pie)
 
     
   }
@@ -141,9 +167,6 @@ mark:"bar",
   
   
 }
-
-
-
 function gold_charts(){
   
 
@@ -187,10 +210,6 @@ mark:"bar",
   }).catch(console.error);
 
 }
-
-
-
-
 function iron_charts(){
   
 
@@ -237,8 +256,6 @@ mark:"bar",
   
   
 }
-
-
 function lead_charts(){
   
 
@@ -281,7 +298,6 @@ mark:"bar",
   }).catch(console.error);
   
 }
-
 function silver_charts(){
   
 

@@ -1,0 +1,493 @@
+"","state","Metal","Number Of Deposits"
+"1","Alabama","Lead",8
+"2","Alabama","Aluminum",439
+"3","Alabama","Iron",1117
+"4","Alabama","Silica",19
+"5","Alabama","Tin",10
+"6","Alabama","Titanium",8
+"7","Alabama","Manganese",66
+"8","Alabama","Arsenic",9
+"9","Alabama","Copper",12
+"10","Alabama","Zinc",31
+"11","Alabama","Gold",263
+"12","Alaska","Tungsten",382
+"13","Alaska","Antimony",251
+"14","Alaska","Uranium",200
+"15","Alaska","Zinc",524
+"16","Alaska","Molybdenum",263
+"17","Alaska","Silver",815
+"18","Alaska","Tin",222
+"19","Alaska","Gold",6702
+"20","Alaska","Lead",674
+"21","Alaska","Copper",2195
+"22","Arizona","Gold",3042
+"23","Arizona","Lead",1392
+"24","Arizona","Copper",2855
+"25","Arizona","Silver",2642
+"26","Arizona","Iron",199
+"27","Arizona","Manganese",429
+"28","Arizona","Zinc",490
+"29","Arizona","Vanadium",203
+"30","Arizona","Tungsten",387
+"31","Arizona","Uranium",551
+"32","Arkansas","Iron",67
+"33","Arkansas","Copper",7
+"34","Arkansas","Aluminum",116
+"35","Arkansas","Mercury",55
+"36","Arkansas","Niobium (Columbium)",8
+"37","Arkansas","Lead",205
+"38","Arkansas","Manganese",138
+"39","Arkansas","Vanadium",7
+"40","Arkansas","Silica",52
+"41","Arkansas","Titanium",13
+"42","Arkansas","Zinc",223
+"43","California","Lead",646
+"44","California","Gold",22862
+"45","California","Iron",408
+"46","California","Tungsten",1165
+"47","California","Manganese",640
+"48","California","Mercury",926
+"49","California","Silver",1220
+"50","California","Chromium",2085
+"51","California","Uranium",329
+"52","California","Copper",1854
+"53","Colorado","Copper",826
+"54","Colorado","Uranium",2089
+"55","Colorado","Vanadium",485
+"56","Colorado","Molybdenum",174
+"57","Colorado","Silver",2144
+"58","Colorado","Tungsten",416
+"59","Colorado","Lead",1699
+"60","Colorado","Zinc",814
+"61","Colorado","Gold",5022
+"62","Colorado","Manganese",241
+"63","Connecticut","Beryllium",4
+"64","Connecticut","Cobalt",2
+"65","Connecticut","Gold",6
+"66","Connecticut","Bismuth",4
+"67","Connecticut","Tungsten",2
+"68","Connecticut","Copper",19
+"69","Connecticut","Nickel",4
+"70","Connecticut","Silver",8
+"71","Connecticut","Manganese",7
+"72","Connecticut","Iron",41
+"73","Connecticut","Lead",8
+"74","Delaware","Pigment",1
+"75","Delaware","Aluminum",1
+"76","Delaware","Chromium",1
+"77","Delaware","Iron",9
+"78","Delaware","Magnesite",1
+"79","Delaware","Titanium",2
+"80","District of Columbia","Iron",2
+"81","Florida","Silica",7
+"82","Florida","Iron",12
+"83","Florida","Aluminum",1
+"84","Florida","REE",2
+"85","Florida","Titanium-Heavy Minerals",14
+"86","Florida","Zirconium",3
+"87","Florida","Thorium",2
+"88","Florida","Titanium",13
+"89","Florida","Magnesite",3
+"90","Florida","Metal",1
+"91","Florida","Peat",1
+"92","Georgia","Titanium",13
+"93","Georgia","Copper",13
+"94","Georgia","Zinc",4
+"95","Georgia","Aluminum",207
+"96","Georgia","Chromium",3
+"97","Georgia","Lead",3
+"98","Georgia","Manganese",96
+"99","Georgia","Gold",475
+"100","Georgia","Zirconium",6
+"101","Georgia","Iron-Pyrite",18
+"102","Georgia","Iron",328
+"103","Hawaii","Metal",1
+"104","Hawaii","Titanium",1
+"105","Hawaii","Aluminum",4
+"106","Idaho","Gold",3073
+"107","Idaho","Uranium",121
+"108","Idaho","Antimony",90
+"109","Idaho","Copper",766
+"110","Idaho","Thorium",176
+"111","Idaho","Tungsten",135
+"112","Idaho","Zinc",363
+"113","Idaho","Lead",1120
+"114","Idaho","Silver",1490
+"115","Idaho","Iron",90
+"116","Illinois","Silica",7
+"117","Illinois","Copper",2
+"118","Illinois","Aluminum",1
+"119","Illinois","Cadmium",2
+"120","Illinois","Lead",169
+"121","Illinois","Gold",1
+"122","Illinois","Iridium",1
+"123","Illinois","Iron",5
+"124","Illinois","Ruthenium",1
+"125","Illinois","Tantalum",1
+"126","Illinois","Thorium",1
+"127","Illinois","Zinc",90
+"128","Illinois","Silver",1
+"129","Illinois","Magnesite",1
+"130","Illinois","Palladium",1
+"131","Illinois","Platinum",1
+"132","Indiana","Tungsten",1
+"133","Indiana","Antimony",1
+"134","Indiana","Silica",5
+"135","Indiana","Chromium",1
+"136","Indiana","Aluminum",12
+"137","Indiana","Lead",2
+"138","Indiana","Magnesite",2
+"139","Indiana","Contained or Metal",1
+"140","Indiana","Iron",292
+"141","Iowa","Iron",7
+"142","Iowa","Molybdenum",1
+"143","Iowa","Bituminous",3
+"144","Iowa","Lead",66
+"145","Iowa","Zinc",56
+"146","Kansas","Lead",4
+"147","Kansas","Zinc",4
+"148","Kentucky","Aluminum",3
+"149","Kentucky","Tungsten",2
+"150","Kentucky","Lead",3
+"151","Kentucky","Silica",27
+"152","Kentucky","Titanium",1
+"153","Kentucky","Chromium",1
+"154","Kentucky","Uranium",3
+"155","Kentucky","Zinc",8
+"156","Kentucky","Contained or Metal",2
+"157","Kentucky","Iron",9
+"158","Louisiana","Aluminum",4
+"159","Louisiana","Manganese",1
+"160","Louisiana","Pigment",1
+"161","Louisiana","Titanium",1
+"162","Maine","Beryllium",19
+"163","Maine","Molybdenum",28
+"164","Maine","Lead",118
+"165","Maine","Manganese",59
+"166","Maine","Zinc",52
+"167","Maine","Gold",69
+"168","Maine","Silver",137
+"169","Maine","Tungsten",20
+"170","Maine","Copper",123
+"171","Maine","Iron",20
+"172","Maryland","Nickel",1
+"173","Maryland","Titanium-Ilmenite",1
+"174","Maryland","Molybdenum",3
+"175","Maryland","Silver",1
+"176","Maryland","Titanium",2
+"177","Maryland","Zinc",1
+"178","Maryland","Manganese",4
+"179","Maryland","Metal",1
+"180","Maryland","Aluminum",2
+"181","Maryland","Pigment",1
+"182","Maryland","Platinum",1
+"183","Maryland","Silica",2
+"184","Maryland","Copper",22
+"185","Maryland","Antimony",1
+"186","Maryland","Chromium",19
+"187","Maryland","Contained or Metal",1
+"188","Maryland","Gold",28
+"189","Maryland","Iron",324
+"190","Maryland","Uranium",1
+"191","Maryland","Titanium-Rutile",1
+"192","Massachusetts","Lead",26
+"193","Massachusetts","Iron",84
+"194","Massachusetts","Silica",12
+"195","Massachusetts","Gold",5
+"196","Massachusetts","Nickel",3
+"197","Massachusetts","Lithium",14
+"198","Massachusetts","Manganese",5
+"199","Massachusetts","Copper",19
+"200","Massachusetts","Sulfur-Pyrite",3
+"201","Massachusetts","Titanium",4
+"202","Michigan","Silica",9
+"203","Michigan","Gold",45
+"204","Michigan","Copper",356
+"205","Michigan","Molybdenum",9
+"206","Michigan","Zinc",17
+"207","Michigan","Iron",1082
+"208","Michigan","Silver",21
+"209","Michigan","Tungsten",5
+"210","Michigan","Lead",17
+"211","Michigan","Magnesite",8
+"212","Minnesota","Titanium",22
+"213","Minnesota","Uranium",10
+"214","Minnesota","Manganese",5
+"215","Minnesota","Copper",15
+"216","Minnesota","Gold",18
+"217","Minnesota","Iron",1170
+"218","Minnesota","Platinum",5
+"219","Minnesota","Silica",13
+"220","Minnesota","Metal",20
+"221","Minnesota","Nickel",12
+"222","Minnesota","Palladium",5
+"223","Mississippi","Chromium",1
+"224","Mississippi","Iron",400
+"225","Mississippi","Aluminum",146
+"226","Mississippi","Anthracite",1
+"227","Mississippi","Pigment",2
+"228","Mississippi","Magnesite",1
+"229","Mississippi","Manganese",1
+"230","Mississippi","Titanium",4
+"231","Mississippi","Silica",1
+"232","Missouri","Lead",3779
+"233","Missouri","Iron",1364
+"234","Missouri","Silver",22
+"235","Missouri","Copper",114
+"236","Missouri","Silica",28
+"237","Missouri","Manganese",48
+"238","Missouri","Nickel",29
+"239","Missouri","Cobalt",38
+"240","Missouri","Sulfur-Pyrite",26
+"241","Missouri","Zinc",3246
+"242","Montana","Silver",2044
+"243","Montana","Gold",3606
+"244","Montana","Copper",1096
+"245","Montana","Molybdenum",90
+"246","Montana","Uranium",228
+"247","Montana","Zinc",316
+"248","Montana","Lead",1332
+"249","Montana","Tungsten",252
+"250","Montana","Iron",172
+"251","Montana","Manganese",274
+"252","Nebraska","Smelter",1
+"253","Nebraska","Lead",2
+"254","Nebraska","Refiner",1
+"255","Nevada","Silver",3158
+"256","Nevada","Tungsten",1004
+"257","Nevada","Uranium",544
+"258","Nevada","Lead",1162
+"259","Nevada","Manganese",231
+"260","Nevada","Mercury",578
+"261","Nevada","Copper",1292
+"262","Nevada","Zinc",288
+"263","Nevada","Antimony",293
+"264","Nevada","Gold",5403
+"265","New Hampshire","Beryllium",13
+"266","New Hampshire","Gold",11
+"267","New Hampshire","Lead",32
+"268","New Hampshire","Copper",31
+"269","New Hampshire","Iron",12
+"270","New Hampshire","Tungsten",6
+"271","New Hampshire","Zinc",12
+"272","New Hampshire","Molybdenum",10
+"273","New Hampshire","Silica",52
+"274","New Hampshire","Sulfur-Pyrite",4
+"275","New Jersey","Iron",504
+"276","New Jersey","Copper",32
+"277","New Jersey","Metal",6
+"278","New Jersey","Platinum",2
+"279","New Jersey","Magnesite",2
+"280","New Jersey","Manganese",2
+"281","New Jersey","Titanium",12
+"282","New Jersey","REE",6
+"283","New Jersey","Silica",3
+"284","New Jersey","Zirconium",5
+"285","New Jersey","Tungsten",2
+"286","New Jersey","Uranium",2
+"287","New Jersey","Zinc",8
+"288","New Mexico","Gold",981
+"289","New Mexico","Copper",766
+"290","New Mexico","Lead",526
+"291","New Mexico","Manganese",203
+"292","New Mexico","Silver",960
+"293","New Mexico","Iron",284
+"294","New Mexico","Uranium",780
+"295","New Mexico","Vanadium",74
+"296","New Mexico","Tungsten",59
+"297","New Mexico","Zinc",344
+"298","New York","Metal",29
+"299","New York","Iron",407
+"300","New York","Lead",52
+"301","New York","Molybdenum",8
+"302","New York","Sulfur-Pyrite",19
+"303","New York","Titanium",49
+"304","New York","Manganese",19
+"305","New York","Zinc",15
+"306","New York","Zirconium",6
+"307","New York","Vanadium",8
+"308","New York","Copper",6
+"309","North Carolina","Copper",130
+"310","North Carolina","Silver",16
+"311","North Carolina","Magnesite",21
+"312","North Carolina","Manganese",30
+"313","North Carolina","REE",29
+"314","North Carolina","Thorium",26
+"315","North Carolina","Tin",36
+"316","North Carolina","Lead",32
+"317","North Carolina","Gold",524
+"318","North Carolina","Iron",238
+"319","North Dakota","Uranium",23
+"320","North Dakota","Manganese",1
+"321","Ohio","Titanium",4
+"322","Ohio","Iron",36
+"323","Ohio","Aluminum",3
+"324","Ohio","Beryllium",2
+"325","Ohio","Chromium",4
+"326","Ohio","Silica",5
+"327","Ohio","Zirconium",8
+"328","Ohio","Manganese",2
+"329","Ohio","Tungsten",3
+"330","Ohio","Zinc",2
+"331","Ohio","Metal",2
+"332","Ohio","REE",2
+"333","Oklahoma","Uranium",4
+"334","Oklahoma","Zinc",9
+"335","Oklahoma","Metal",1
+"336","Oklahoma","Copper",173
+"337","Oklahoma","Lead",13
+"338","Oklahoma","Manganese",1
+"339","Oklahoma","Silica",8
+"340","Oklahoma","Titanium",2
+"341","Oklahoma","Nickel",1
+"342","Oklahoma","Zirconium",1
+"343","Oklahoma","Platinum",2
+"344","Oklahoma","Palladium",1
+"345","Oregon","Copper",726
+"346","Oregon","Gold",4510
+"347","Oregon","Chromium",1195
+"348","Oregon","Mercury",632
+"349","Oregon","Uranium",148
+"350","Oregon","Lead",153
+"351","Oregon","Manganese",183
+"352","Oregon","Zinc",157
+"353","Oregon","Nickel",131
+"354","Oregon","Silver",696
+"355","Pennsylvania","Chromium",17
+"356","Pennsylvania","Zirconium",5
+"357","Pennsylvania","Aluminum",4
+"358","Pennsylvania","Manganese",12
+"359","Pennsylvania","Copper",33
+"360","Pennsylvania","Iron",848
+"361","Pennsylvania","Lead",38
+"362","Pennsylvania","Silver",4
+"363","Pennsylvania","Molybdenum",6
+"364","Pennsylvania","Niobium (Columbium)",4
+"365","Pennsylvania","Platinum",4
+"366","Pennsylvania","Zinc",32
+"367","Pennsylvania","Thorium",4
+"368","Pennsylvania","Titanium",4
+"369","Pennsylvania","Uranium",4
+"370","Rhode Island","Arsenic",1
+"371","Rhode Island","Metal",1
+"372","Rhode Island","Gold",2
+"373","Rhode Island","Iron",4
+"374","Rhode Island","Manganese",1
+"375","Rhode Island","Molybdenum",1
+"376","Rhode Island","Titanium",3
+"377","South Carolina","Gold",258
+"378","South Carolina","Copper",10
+"379","South Carolina","Silver",6
+"380","South Carolina","Thorium",40
+"381","South Carolina","Tin",9
+"382","South Carolina","Titanium",57
+"383","South Carolina","Zirconium",40
+"384","South Carolina","REE",5
+"385","South Carolina","Iron",111
+"386","South Carolina","Manganese",15
+"387","South Dakota","Copper",18
+"388","South Dakota","Beryllium",8
+"389","South Dakota","Lithium",16
+"390","South Dakota","Gold",486
+"391","South Dakota","Iron",26
+"392","South Dakota","Lead",20
+"393","South Dakota","Tin",61
+"394","South Dakota","Tungsten",47
+"395","South Dakota","Uranium",212
+"396","South Dakota","Silver",192
+"397","South Dakota","Sulfur-Pyrite",8
+"398","South Dakota","Manganese",8
+"399","Tennessee","Gold",124
+"400","Tennessee","Aluminum",21
+"401","Tennessee","Copper",10
+"402","Tennessee","Silica",82
+"403","Tennessee","Iron",557
+"404","Tennessee","Lead",31
+"405","Tennessee","Manganese",138
+"406","Tennessee","Zinc",113
+"407","Tennessee","Titanium",9
+"408","Tennessee","Uranium",101
+"409","Texas","Gold",34
+"410","Texas","Copper",212
+"411","Texas","Mercury",40
+"412","Texas","Iron",98
+"413","Texas","Lead",100
+"414","Texas","Manganese",35
+"415","Texas","Zinc",61
+"416","Texas","Silica",47
+"417","Texas","Silver",132
+"418","Texas","Uranium",163
+"419","Utah","Copper",1066
+"420","Utah","Gold",794
+"421","Utah","Iron",336
+"422","Utah","Lead",1460
+"423","Utah","Manganese",179
+"424","Utah","Silver",1454
+"425","Utah","Tungsten",169
+"426","Utah","Uranium",2256
+"427","Utah","Vanadium",596
+"428","Utah","Zinc",601
+"429","Vermont","Aluminum",2
+"430","Vermont","Arsenic",2
+"431","Vermont","Chromium",4
+"432","Vermont","Copper",56
+"433","Vermont","Gold",20
+"434","Vermont","Iron",70
+"435","Vermont","Lead",32
+"436","Vermont","Molybdenum",4
+"437","Vermont","Silver",3
+"438","Vermont","Titanium",2
+"439","Vermont","Uranium",22
+"440","Vermont","Zinc",15
+"441","Virginia","Aluminum",6
+"442","Virginia","Copper",214
+"443","Virginia","Gold",392
+"444","Virginia","Iron",731
+"445","Virginia","Lead",56
+"446","Virginia","Manganese",311
+"447","Virginia","Nickel",6
+"448","Virginia","Pig Iron",6
+"449","Virginia","Silver",9
+"450","Virginia","Sulfur-Pyrite",24
+"451","Virginia","Titanium",23
+"452","Virginia","Zinc",164
+"453","Washington","Copper",1584
+"454","Washington","Gold",2428
+"455","Washington","Iron",212
+"456","Washington","Lead",1113
+"457","Washington","Manganese",193
+"458","Washington","Molybdenum",178
+"459","Washington","Silver",1510
+"460","Washington","Tungsten",151
+"461","Washington","Uranium",137
+"462","Washington","Zinc",540
+"463","West Virginia","Aluminum",2
+"464","West Virginia","Chromium",2
+"465","West Virginia","Contained or Metal",1
+"466","West Virginia","Iron",126
+"467","West Virginia","Manganese",13
+"468","West Virginia","Nickel",1
+"469","West Virginia","Zinc",2
+"470","West Virginia","Zirconium",2
+"471","Wisconsin","Copper",92
+"472","Wisconsin","Ferromanganese",1
+"473","Wisconsin","Gold",3
+"474","Wisconsin","Iron",45
+"475","Wisconsin","Lead",351
+"476","Wisconsin","Manganese",2
+"477","Wisconsin","Molybdenum",3
+"478","Wisconsin","Nickel",4
+"479","Wisconsin","REE",1
+"480","Wisconsin","Silica",4
+"481","Wisconsin","Silver",1
+"482","Wisconsin","Zinc",406
+"483","Wyoming","Copper",191
+"484","Wyoming","Gold",213
+"485","Wyoming","Iron",122
+"486","Wyoming","Lead",20
+"487","Wyoming","Manganese",21
+"488","Wyoming","Silica",22
+"489","Wyoming","Silver",46
+"490","Wyoming","Titanium",27
+"491","Wyoming","Tungsten",26
+"492","Wyoming","Uranium",2245
