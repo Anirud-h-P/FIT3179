@@ -229,5 +229,58 @@ write.csv(state_matrix,"state_matrix.csv")
 list.files(temp, pattern = "csv$")
 
 
+```{r}
 
+ores<- read.csv("mineral-ores.csv")
+
+ores <- ores %>%
+  filter(country == "United States")
+
+ores <- ores %>%
+  filter(com_type == "M")
+
+
+
+ores <- ores %>%
+  mutate(state = strsplit(as.character(state),",")) %>%
+  unnest(state)
+
+ores$concat <- paste(ores$commod1,ores$commod2,ores$commod3)
+```
+
+```{r}
+
+ores_sep <- ores %>%
+  separate(concat,c("A","B","C","D","E"))
+
+ores_a <- ores_sep %>%
+  group_by(A) %>%
+  count()
+
+ores_b <- ores_sep %>%
+  group_by(B) %>%
+  count()
+
+
+ores_c <- ores_sep %>%
+  group_by(C) %>%
+  count()
+
+
+ores_d <- ores_sep %>%
+  group_by(D) %>%
+  count()
+
+
+ores_e <- ores_sep %>%
+  group_by(E) %>%
+  count()
+
+
+
+
+
+
+
+```
 

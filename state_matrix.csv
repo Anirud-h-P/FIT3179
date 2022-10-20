@@ -1,49 +1,46 @@
-,state,Copper,Gold,Iron,Lead,Silver,Region
-1,Alabama,12,263,1117,8,0,South
-2,Alaska,2195,6702,190,674,815,Pacific
-3,Arizona,2855,3042,199,1392,2642,West
-4,Arkansas,7,0,67,205,2,South
-5,California,1854,22862,408,646,1220,West
-6,Colorado,826,5022,150,1699,2144,West
-7,Connecticut,19,6,41,8,8,Northeast
-8,Delaware,0,0,9,0,0,South
-9,District of Columbia,0,0,2,0,0,South
-10,Florida,0,0,12,0,0,South
-11,Georgia,13,475,328,3,0,South
-12,Idaho,766,3073,90,1120,1490,West
-13,Illinois,2,1,5,169,1,Midwest
-14,Indiana,0,0,292,2,0,Midwest
-15,Iowa,0,0,7,66,0,Midwest
-16,Kansas,0,0,0,4,0,Midwest
-17,Kentucky,0,0,9,3,0,South
-18,Maine,123,69,20,118,137,West
-19,Maryland,22,28,324,0,1,South
-20,Massachusetts,19,5,84,26,2,Northeast
-21,Michigan,356,45,1082,17,21,Midwest
-22,Minnesota,15,18,1170,0,3,Midwest
-23,Mississippi,0,0,400,0,0,South
-24,Missouri,114,8,1364,3779,22,Midwest
-25,Montana,1096,3606,172,1332,2044,West
-26,Nebraska,0,0,0,2,0,Midwest
-27,Nevada,1292,5403,215,1162,3158,West
-28,New Hampshire,31,11,12,32,3,Northeast
-29,New Jersey,32,0,504,1,1,Northeast
-30,New Mexico,766,981,284,526,960,West
-31,New York,6,1,407,52,5,Northeast
-32,North Carolina,130,524,238,32,16,South
-33,Ohio,1,0,36,1,0,Midwest
-34,Oklahoma,173,0,0,13,0,South
-35,Oregon,726,4510,107,153,696,West
-36,Pennsylvania,33,3,848,38,4,Northeast
-38,Rhode Island,0,2,4,0,0,Northeast
-39,South Carolina,10,258,111,2,6,South
-40,South Dakota,18,486,26,20,192,Midwest
-41,Tennessee,10,124,557,31,0,South
-42,Texas,212,34,98,100,132,South
-44,Utah,1066,794,336,1460,1454,West
-45,Vermont,56,20,70,32,3,Northeast
-46,Virginia,214,392,731,56,9,South
-47,Washington,1584,2428,212,1113,1510,West
-48,West Virginia,0,0,126,0,0,South
-49,Wisconsin,92,3,45,351,1,Midwest
-50,Wyoming,191,213,122,20,46,West
+,Metal,Commod1,Commod2,Commod3,Commod4,Commod5
+2,Aluminum,1240,80,24,14,16
+3,Antimony,801,609,330,315,297
+4,Arsenic,87,300,259,276,229
+5,Beryllium,355,77,36,37,15
+6,Bismuth,44,137,98,106,92
+7,Cadmium,3,22,16,51,25
+8,Chromium,3653,512,197,74,44
+9,Coal,12,17,7,1,3
+10,Cobalt,121,256,205,93,74
+11,Copper,12985,8897,5587,3173,1714
+12,Gallium,7,2,1,1,2
+13,Gold,56559,8055,4628,2538,1179
+14,Iridium,2,19,33,56,17
+15,Iron,12197,3986,837,531,258
+16,Lead,10128,9195,6563,3415,904
+17,Lithium,72,38,12,3,4
+18,Magnesite,403,26,12,12,4
+19,Manganese,3411,3240,496,197,143
+20,Mercury,2430,469,236,112,59
+21,Molybdenum,1015,864,602,387,284
+22,Nickel,416,346,214,149,66
+23,Niobium,87,65,49,17,11
+24,Oil,1,118,131,1,1
+25,Osmium,3,11,19,16,7
+26,Palladium,14,55,83,40,30
+27,PGE,38,131,53,32,15
+28,Platinum,96,456,130,75,39
+29,REE,208,255,109,87,41
+30,Rhenium,4,19,7,4,4
+31,Rhodium,4,37,26,28,23
+32,Ruthenium,3,5,20,14,37
+33,Selenium,7,27,30,16,5
+34,Silica,1024,143,84,58,26
+35,Silver,9865,19548,7564,3310,1082
+36,Sulfur,91,119,66,50,37
+37,Tantalum,21,29,49,34,18
+38,Tellurium,3,36,39,36,28
+39,Thorium,474,178,128,54,52
+40,Tin,345,367,218,94,69
+41,Titanium,451,434,199,70,43
+42,Tungsten,3854,1257,601,331,209
+43,Uranium,9722,3116,502,185,117
+44,Vanadium,441,2364,1118,105,69
+45,Zinc,4506,7069,3595,2882,2519
+46,Zirconium,69,88,80,59,41
