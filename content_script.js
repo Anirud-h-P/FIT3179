@@ -42,6 +42,7 @@ var copper_bar = {
   $schema: "https://vega.github.io/schema/vega-lite/v5.json",
   description: "Bar chart",
   title: "Number Of Copper Deposits By State",
+  width:300,
   data: {
     
     url: "https://raw.githubusercontent.com/Anirud-h-P/FIT3179/main/topdeposits_bystate.csv"
@@ -94,6 +95,7 @@ var gold_bar = {
   $schema: "https://vega.github.io/schema/vega-lite/v5.json",
   description: "Bar chart",
   title: "Number Of Gold Deposits By State",
+  width:300,
   data: {
     
     url: "https://raw.githubusercontent.com/Anirud-h-P/FIT3179/main/topdeposits_bystate.csv"
@@ -137,6 +139,7 @@ var iron_bar = {
   $schema: "https://vega.github.io/schema/vega-lite/v5.json",
   description: "Bar chart",
   title: "Number Of Iron Deposits By State",
+  width:300,
   data: {
     
     url: "https://raw.githubusercontent.com/Anirud-h-P/FIT3179/main/topdeposits_bystate.csv"
@@ -183,6 +186,7 @@ var lead_bar = {
   $schema: "https://vega.github.io/schema/vega-lite/v5.json",
   description: "Bar chart",
   title: "Number Of Lead Deposits By State",
+  width:300,
   data: {
     
     url: "https://raw.githubusercontent.com/Anirud-h-P/FIT3179/main/topdeposits_bystate.csv"

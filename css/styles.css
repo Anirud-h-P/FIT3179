@@ -7,8 +7,9 @@
 }
 
 * {
-
- font-family: Sans-Serif;
+ 
+  font-family: Sans-Serif;
+  max-width:1200px;
 }
 
 
@@ -35,20 +36,23 @@
 }
 
 
-img{
-  width:80%;
-  height:auto;
-}
+
 
 
 #metal_chart {
-  width:50%;
+  max-width:500px;
 
 
 }
 
 #state_matrix{
-  width:50%;
+  width:100%;
 
 
+}
+
+
+
+p{
+  width:80%;
 }
