@@ -57,7 +57,7 @@ mark:"bar",
     x: {field: "state", type: "ordinal",sort:"-y"},
     y: {field: "Number Of Deposits", type: "quantitative", axis: {labelSeparation:1}},
     "color": {"value": "orange"},
-    tooltip:{field:"Number Of Deposits",type:"quantitative"}
+    tooltip:[{field:"Number Of Deposits",type:"quantitative",title:"Num Deposits"}]
 
   },
 
@@ -110,7 +110,7 @@ mark:"bar",
     x: {field: "state", type: "ordinal",sort:"-y"},
     y: {field: "Number Of Deposits", type: "quantitative", axis: {labelSeparation:1}},
     "color": {"value": "gold"},
-    tooltip:{field:"Number Of Deposits",type:"quantitative"}
+    tooltip:[{field:"Number Of Deposits",type:"quantitative",title:"Num Deposits"}]
 
   },
 
@@ -154,7 +154,7 @@ mark:"bar",
     x: {field: "state", type: "ordinal",sort:"-y"},
     y: {field: "Number Of Deposits", type: "quantitative", axis: {labelSeparation:1}},
     "color": {"value": "steelblue"},
-    tooltip:{field:"Number Of Deposits",type:"quantitative"}
+    tooltip:[{field:"Number Of Deposits",type:"quantitative",title:"Num Deposits"}]
 
   },
 
@@ -201,7 +201,7 @@ mark:"bar",
     x: {field: "state", type: "ordinal",sort:"-y"},
     y: {field: "Number Of Deposits", type: "quantitative", axis: {labelSeparation:1}},
     "color": {"value": "green"},
-    tooltip:{field:"Number Of Deposits",type:"quantitative"}
+    tooltip:[{field:"Number Of Deposits",type:"quantitative",title:"Num Deposits"}]
 
   },
 

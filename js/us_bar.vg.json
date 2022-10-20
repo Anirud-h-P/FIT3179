@@ -12,7 +12,7 @@
     "y": {"field": "Metal", "type": "ordinal","sort":"-x"},
     "x": {"field": "Number Of Deposits", "type": "quantitative", "axis": {"labelSeparation":1}},
     "color":{"field":"Metal"},
-    "tooltip":{"field":"Number Of Deposits","type":"quantitative","title":"Number Of Deposits"}
+    "tooltip":[{"field":"Number Of Deposits","type":"quantitative","title":"Number Of Deposits"}]
 
   }
   
