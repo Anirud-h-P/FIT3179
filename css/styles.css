@@ -21,14 +21,25 @@
   
 }
 
-img {
-  max-width: 100px;
-  height: auto;
+
+
+
+#diag {
+  display:flex;
+  width:40%;
 }
 
-#lead_arrow {
-  z-index:-1
-  position: relative;
+
+
+
+
+#metal_chart {
+  display:inline-block;
+
 }
-  
+
+#state_matrix{
+  width:50%;
+  display:inline-block;
+
 }
