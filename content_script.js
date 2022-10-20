@@ -10,11 +10,7 @@ function init_charts() {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
   
-          var spec3 = "js/state_matrix.vg.json";
-  vegaEmbed('#state_matrix', spec3).then(function(result) {
-    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-  }).catch(console.error);
-  
+
   
   copper_charts()
   
@@ -68,6 +64,13 @@ mark:"bar",
 vegaEmbed('#metals_us_bar', copper_bar).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
+
+var copper_matrix = "js/copper_matrix.vg.json";
+  vegaEmbed('#state_matrix', copper_matrix).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+   
+  
   
   
 
@@ -124,6 +127,12 @@ mark:"bar",
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
 
+
+var gold_matrix = "js/gold_matrix.vg.json";
+  vegaEmbed('#state_matrix', gold_matrix).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+  
 }
 function iron_charts(){
   
@@ -164,7 +173,12 @@ mark:"bar",
 }
 
 
-  vegaEmbed('#metals_us_bar', iron_bar).then(function(result) {
+vegaEmbed('#metals_us_bar', iron_bar).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+  
+var iron_matrix = "js/iron_matrix.vg.json";
+  vegaEmbed('#state_matrix', iron_matrix).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
 
@@ -194,6 +208,8 @@ var lead_bar = {
 
 
 
+
+
 mark:"bar",
 
 
@@ -211,6 +227,12 @@ mark:"bar",
 }
 
   vegaEmbed('#metals_us_bar', lead_bar).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+  
+  
+var lead_matrix = "js/lead_matrix.vg.json";
+  vegaEmbed('#state_matrix', lead_matrix).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
   
@@ -256,7 +278,10 @@ mark:"bar",
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
 
-  
+var silver_matrix = "js/silver_matrix.vg.json";
+  vegaEmbed('#state_matrix', silver_matrix).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);  
   
 }
 
