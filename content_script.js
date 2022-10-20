@@ -65,7 +65,7 @@ vegaEmbed('#metals_us_bar', copper_bar).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
 
-var copper_matrix = "js/copper_matrix.vg.json";
+var copper_matrix = "js/Copper_matrix.vg.json";
   vegaEmbed('#state_matrix', copper_matrix).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
@@ -231,7 +231,7 @@ mark:"bar",
   }).catch(console.error);
   
   
-var lead_matrix = "js/lead_matrix.vg.json";
+var lead_matrix = "js/Lead_matrix.vg.json";
   vegaEmbed('#state_matrix', lead_matrix).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
