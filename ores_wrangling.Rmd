@@ -50,7 +50,7 @@ colnames(top_ores_us) <- c("Metal", "Number Of Deposits")
 
   
 
-write.csv(top_ores_us[1:10,],"top_ores_us.csv")
+write.csv(top_ores_us[1:20,],"top_ores_us.csv")
 ```
 
 
@@ -217,9 +217,7 @@ state_matrix <- ores %>%
 state_matrix  <- state_matrix %>%
   pivot_wider(names_from = commod1,values_from = n)
 
-state_matrix <- state_matrix %>%
-  filter(state == "California" |state ==  "Colorado" |state ==  "Alaska" |state ==  "Nevada" |state ==  "Missouri" |state == "Arizona"
-         |state == "Utah" | state == "Oregon" | state == "Montana")
+state_matrix <- state_matrix 
   
 
 write.csv(state_matrix,"state_matrix.csv")
