@@ -253,9 +253,15 @@ ores$concat <- paste(ores$commod1,ores$commod2,ores$commod3)
 ores_sep <- ores %>%
   separate(concat,c("A","B","C","D","E"))
 
+
+```
+
+```{r}
 ores_a <- ores_sep %>%
   group_by(A) %>%
-  count()
+  
+  count() %>%
+  order(desc(n))
 
 ores_b <- ores_sep %>%
   group_by(B) %>%
@@ -277,10 +283,18 @@ ores_e <- ores_sep %>%
   count()
 
 
+```
+```{r}
+
+ab <- merge(ores_a,ores_b,by.x = "A", by.y = "B")
+abc <- merge(ab,ores_c,by.x = "A", by.y = "C")
+abcd <- merge(abc,ores_d,by.x = "A", by.y = "D")
+abcde <- merge(abcd,ores_e,by.x = "A", by.y = "E")
 
 
+abcde <- t(abcde)
 
-
+write.csv(abcde,"state_matrix.csv")
 
 ```
 
