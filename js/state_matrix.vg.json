@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "matrix plot",
   "title": "Metal Deposits In Metal-Rich states",
-  "width": 600,
+  "width": 400,
   "height": 300,
   "data": {
     "url": "https://raw.githubusercontent.com/Anirud-h-P/FIT3179/main/state_matrix.csv"

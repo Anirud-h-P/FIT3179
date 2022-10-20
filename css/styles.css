@@ -6,6 +6,11 @@
 	width: 800px;*/
 }
 
+* {
+
+ font-family: Sans-Serif;
+}
+
 
 #state_map {
   display: inline
@@ -30,16 +35,20 @@
 }
 
 
-
+img{
+  width:80%;
+  height:auto;
+}
 
 
 #metal_chart {
-  display:inline-block;
+  width:50%;
+
 
 }
 
 #state_matrix{
   width:50%;
-  display:inline-block;
+
 
 }
