@@ -231,6 +231,11 @@ list.files(temp, pattern = "csv$")
 
 ```{r}
 
+
+
+
+
+
 ores<- read.csv("mineral-ores.csv")
 
 ores <- ores %>%
@@ -262,37 +267,49 @@ ores_a <- ores_sep %>%
   count() %>%
   arrange(desc(n))
 
-ores_b <- ores_sep %>%
+
+
+vec <- c("Gold", "Silver","Copper","Lead","Iron")
+for(i in 1:5){
+
+  ores_b <- ores_sep %>%
+  filter(commod1 == vec[i]) %>%
   group_by(B) %>%
   count()
-
-
-ores_c <- ores_sep %>%
+  
+  ores_c <- ores_sep %>%
+  filter(commod1 == vec[i]) %>%
   group_by(C) %>%
   count()
-
-
-ores_d <- ores_sep %>%
+  
+  ores_d <- ores_sep %>%
+  filter(commod1 == vec[i]) %>%
   group_by(D) %>%
   count()
+  
+  bc <- merge(ores_b,ores_c,by.x = "B", by.y = "C")
+  bcd <- merge(bc,ores_d,by.x = "B", by.y = "D")
+  bcd <- t(bcd)
+
+  write.csv(bcd ,paste0("Matrix/",vec[i], ".csv"))
+  
+}
 
 
-ores_e <- ores_sep %>%
-  group_by(E) %>%
-  count()
+
+
 
 
 ```
 ```{r}
 
-bc <- merge(ores_b,ores_c,by.x = "B", by.y = "C")
-bcd <- merge(bc,ores_d,by.x = "B", by.y = "D")
 
-
-
-bcd <- t(bcd)
 
 write.csv(bcd,"state_matrix.csv")
+
+```
+```{r}
+
 
 ```
 

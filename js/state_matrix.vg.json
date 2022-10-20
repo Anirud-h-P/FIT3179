@@ -1,17 +1,17 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "matrix plot",
-  "title": "Metal Deposits In Metal-Rich states",
+  "title": "Secondary , Tertiary & Quarternary Deposits",
   "width": 400,
   "height": 300,
   "data": {
-    "url": "https://raw.githubusercontent.com/Anirud-h-P/FIT3179/main/state_matrix.csv"
+    "url": "https://raw.githubusercontent.com/Anirud-h-P/FIT3179/main/sm.csv"
   },
 
   "transform": [
-    {"filter": "datum['Copper']"},
+    
     {"window": [{"op": "count", "as": "index"}]},
-    {"fold": ["Gold", "Silver", "Copper", "Lead", "Iron"]},
+    {"fold": ["Gold", "Silver" ,"Lead", "Iron","Copper","Zinc","Uranium"]},
     {
       "joinaggregate": [
         {"op": "min", "field": "value", "as": "min"},
@@ -23,51 +23,20 @@
     {"calculate": "(datum.min + datum.max) / 2", "as": "mid"}
   ],
   "layer": [
-    {
-      "mark": {"type": "rule", "color": "#ccc"},
-      "encoding": {"detail": {"aggregate": "count"}, "x": {"field": "key"}}
-    },
+
     {
       "mark": "line",
       "encoding": {
-        "color": {"type": "nominal", "field": "state"},
+        "color": {"type": "nominal", "field": "Occurrence"},
         "detail": {"type": "nominal", "field": "index"},
-        "x": {"type": "nominal", "field": "key"},
-        "y": {"type": "quantitative", "field": "Number Of Deposits"},
-        "tooltip": [
-          {"type": "nominal", "field": "state"},
-          {"type": "quantitative", "field": "Copper"},
-          {"type": "quantitative", "field": "Gold"},
-          {"type": "quantitative", "field": "Iron"},
-          {"type": "quantitative", "field": "Lead"},
-          {"type": "quantitative", "field": "Silver"}
-        ]
+        "x": {"type": "nominal", "field": "key","sort":
+        ["Silver","Lead","Copper","Gold","Zinc"]},
+        "y": {"type": "quantitative", "field": "Number Of Deposits"
+        }
       }
-    },
-    {
-      "encoding": {"x": {"type": "nominal", "field": "key"}, "y": {"value": 0}},
-      "layer": [
-        {"mark": {"type": "tick", "style": "tick", "size": 8, "color": "#ccc"}}
-      ]
-    },
-    {
-      "encoding": {
-        "x": {"type": "nominal", "field": "key"},
-        "y": {"value": 150}
-      },
-      "layer": [
-        {"mark": {"type": "tick", "style": "tick", "size": 10, "color": "#ccc"}}
-      ]
-    },
-    {
-      "encoding": {
-        "x": {"type": "nominal", "field": "key"},
-        "y": {"value": 300}
-      },
-      "layer": [
-        {"mark": {"type": "tick", "style": "tick", "size": 8, "color": "#ccc"}}
-      ]
     }
-  ],
-  "config": {}
+
+
+
+  ]
 }
