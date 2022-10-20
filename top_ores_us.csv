@@ -1,11 +1,8 @@
-"","Metal","Number Of Deposits"
-"1","Gold",61442
-"2","Silver",18757
-"3","Copper",17052
-"4","Lead",16475
-"5","Iron",12667
-"6","Uranium",10186
-"7","Zinc",9229
-"8","Tungsten",4324
-"9","Chromium",3751
-"10","Manganese",3696
+,Metal,Number Of Deposits
+1,Gold,61442
+2,Silver,18757
+3,Copper,17052
+4,Lead,16475
+5,Iron,12667
+6,Uranium,10186
+7,Zinc,9229
